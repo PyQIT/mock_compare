@@ -1,0 +1,29 @@
+Zespół: 
+Pyk Przemysław pyk.przemyslaw@gmail.com 1ID21B
+Siczek Krzysztof krzysztof.siczek109@gmail.com 1ID21B
+
+Temat: 
+Porównanie rozwiązań związanych z testowaniem
+
+Technologie: 
+Windows, Java, C#, Mockito, PowerMockito, JustMock, TypeMock, JUnit 5, AssertJ, XUnit, NUnit
+
+Harmonogram:
+Etap 2 - Instalacja i konfiguracja języków programowania oraz bibliotek przy wykorzystaniu narzędzi automatyzujących.
+Etap 3 - Przygotowanie schematu wykonywanych działań do porównania narzędzi testujących.
+Etap 4 - Porównanie bibliotek Mockito oraz PowerMockito.
+Etap 5 - Porównanie bibliotek JUnit 5 oraz AssertJ.
+Etap 6 - Porównanie bibliotek JustMock oraz TypeMock.
+Etap 7 - Porównanie bibliotek XUnit oraz NUnit.
+Etap 8 - Wykonanie sprawozdania zawierającego wszystkie dokonane analizy łącznie z wykresami statystycznymi.
+
+Podział prac:
+Przemysław Pyk - porównanie rozwiązań Mockito i PowerMockito oraz JustMock i TypeMock
+Krzysztof Siczek - porównanie rozwiązań JUnit 5 i AssertJ oraz XUnit i NUnit
+
+Tematy prac inżynierskich: 
+Przemysław Pyk - Projekt i konstrukcja zdalnie sterowanego modelu pojazdu do transportu urządzeń medycznych opartego na platformie Arduino.
+Krzysztof Siczek - System informatyczny rezerwacji miejsc hotelowych.
+
+Temat projektu PSR: 
+Przemysław Pyk i Krzysztof Siczek - Łamacz haseł
