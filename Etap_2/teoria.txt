@@ -1,0 +1,54 @@
+Java
+
+Mockito to biblioteka udostępniająca API do tworzenia mokowalnych obiektów w Javie. Obiekt mokowany to atrapa implementacji obiektu. Po utworzeniu takiego obiektu można zdefiniować atrybuty obiektu bez powoływania jego instancji wraz z uzupełnianiem wszystkich właściwości.
+
+EasyMock to framework podobny do Mockito. Pozwala na utworzenia własnych mockowych obiektów, w których można  zasymulować dany obiekt, ustalić sposób zachowania oraz sprawdzić czy funkcjonalności działają jak przewidujemy.
+
+Porównanie
+
+Mockito													EasyMock
+
+- działa na licencji Mockito  							- działa na licencji Apache
+
+- pozwala na tworzenie mocków oraz szpiegów				- pozwala na stworzenie mocków
+(szpiedzy działają na realnych obiektach, 
+jeśli nie zrobi się mockowej wersji metody
+wywoływana jest prawdziwa)
+
+- wywoływanie mocków 									- wywoływanie mocków
+  Mockito.when(mock.method(args)).thenReturn(value)		  EasyMock.expect(mock.method(args)).andReturn(Value)
+
+- weryfikowanie mocków 									- weryfikowanie mocków
+  Mockito.verify(mock).method(args)						  EasyMock.verify(mock)
+
+- przechwytywanie wyjątków								- przechwytywanie wyjątków
+  .thenThrow(ExceptionClass.class)						  .andThrow(new ExceptionClass())
+
+- możliwość konfiguracji za pomocą adnotacji			- możliwość konfiguracji za pomocją adnotacji
+
+- brak potrzeby wywoływania powtórki tworzenia mocku	- konieczność wywoływania @replay do ponownego wykorzystania mocku
+
+- możliwość weryfikacji nieoczekiwanych inwokacji,		- możliwość weryfikacji nieoczekiwanych inwokacji,
+  niepotrzebnych inwokacji oraz weryfikacji kolejności    niepotrzebnych inwokacji oraz weryfikacji kolejności
+
+- lepsza czytelność kodu 								- gorsza czytelność kodu
+  verify(), when()										  expect(mock.foo()), mock.foo()
+
+- weryfikacja jest wyraźna, wskazanie miejsca błędu		- weryfikacja nie jest wyraźna, brak miejsca błędu
+
+- weryfikacja w kolejności jest elastyczna				- weryfikacja w kolejności nie jest elastyczna
+  Nie wymaga weryfikacji każdej pojedynczej interakcji
+
+C#
+
+JustMock jest open source'owym rozwiązaniem pozwalającym na łatwe wykonywanie testów jednostkowych, najlepiej dla projektów w metodologii SOLID. Pozwala na stworzenie obiektów mokowanych, w których uzupłniamy podstawowe istotne wartości do celów testowych.
+
+TypeMock to płatne rozwiązanie, pozwalające na tworzenie obiektów mokowanych, działające wspólnie z frameworkiem .NET. Pozwala na podłączenie udających zależności w jednym podejścią oraz ostrzega o wewnętrznych zależnościach w testach.
+
+Porównanie
+
+JustMock												TypeMock
+
+- działa z frameworkiem .NET 						    - działa z frameworkiem .NET
+- nie pozwala na mockowanie obiektów na produkcji		- pozwala na mockowanie obiektów, do których nie można dotrzeć z poziomu testu
+														  np. zainicjowane na produkcji
