@@ -1,8 +1,10 @@
 Java
 
-Mockito to biblioteka udostępniająca API do tworzenia mokowalnych obiektów w Javie. Obiekt mokowany to atrapa implementacji obiektu. Po utworzeniu takiego obiektu można zdefiniować atrybuty obiektu bez powoływania jego instancji wraz z uzupełnianiem wszystkich właściwości.
+Mockito to biblioteka udostępniająca API do tworzenia mokowalnych obiektów w Javie. Obiekt mokowany to atrapa implementacji obiektu. 
+Po utworzeniu takiego obiektu można zdefiniować atrybuty obiektu bez powoływania jego instancji wraz z uzupełnianiem wszystkich właściwości.
 
-EasyMock to framework podobny do Mockito. Pozwala na utworzenia własnych mockowych obiektów, w których można  zasymulować dany obiekt, ustalić sposób zachowania oraz sprawdzić czy funkcjonalności działają jak przewidujemy.
+EasyMock to framework podobny do Mockito. Pozwala na utworzenia własnych mockowych obiektów, w których można  zasymulować dany obiekt, 
+ustalić sposób zachowania oraz sprawdzić czy funkcjonalności działają jak przewidujemy.
 
 Porównanie
 
@@ -41,9 +43,11 @@ wywoływana jest prawdziwa)
 
 C#
 
-JustMock jest open source'owym rozwiązaniem pozwalającym na łatwe wykonywanie testów jednostkowych, najlepiej dla projektów w metodologii SOLID. Pozwala na stworzenie obiektów mokowanych, w których uzupłniamy podstawowe istotne wartości do celów testowych.
+JustMock jest open source'owym rozwiązaniem pozwalającym na łatwe wykonywanie testów jednostkowych, najlepiej dla projektów w metodologii SOLID. 
+Pozwala na stworzenie obiektów mokowanych, w których uzupłniamy podstawowe istotne wartości do celów testowych.
 
-TypeMock to płatne rozwiązanie, pozwalające na tworzenie obiektów mokowanych, działające wspólnie z frameworkiem .NET. Pozwala na podłączenie udających zależności w jednym podejścią oraz ostrzega o wewnętrznych zależnościach w testach.
+TypeMock to płatne rozwiązanie, pozwalające na tworzenie obiektów mokowanych, działające wspólnie z frameworkiem .NET. 
+Pozwala na podłączenie udających zależności w jednym podejścią oraz ostrzega o wewnętrznych zależnościach w testach.
 
 Porównanie
 
