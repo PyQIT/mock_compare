@@ -1,4 +1,4 @@
-package com.mock_compare.mock_compare;
+package com.mock_compare.mock_compare.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
