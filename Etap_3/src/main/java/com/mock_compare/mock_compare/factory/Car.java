@@ -1,44 +1,23 @@
 package com.mock_compare.mock_compare.factory;
 
-public abstract class Car {
+public class Car extends Vehicle {
 
-    protected String identificationNumber;
-    protected String brand;
-    protected String type;
-    protected String insurance;
-    protected boolean carOverview;
+    private String registrationNumber;
 
-    public void setIdentificationNumber(String identificationNumber){
+    public void setCar(String identificationNumber, String registrationNumber, String brand, String type, String insurance){
         this.identificationNumber = identificationNumber;
+        this.registrationNumber = registrationNumber;
+        this.brand = brand;
+        this.type = type;
+        this.insurance = insurance;
     }
 
-    public String getIdentificationNumber(){
-        return identificationNumber;
+    public void setRegistrationNumber(String registrationNumber){
+        this.registrationNumber = registrationNumber;
     }
 
-   public String getBrand(){
-       return brand;
-   }
-
-   public String getType(){
-       return type;
-   }
-
-   public String getInsurance(){
-       return insurance;
-   }
-
-   public void setCarOverview(boolean carOverview){
-        this.carOverview = carOverview;
-   }
-
-   public boolean getCarOverView(){
-        return carOverview;
-   }
-
-   public boolean isCarOverview(){
-       return carOverview;
+    public String getRegistrationNumber(){
+        return registrationNumber;
     }
-
 
 }
