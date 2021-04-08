@@ -15,23 +15,23 @@ public class CarServiceImpl implements CarService{
 
     @Override
     public List<Car> getCars(){
-
+        return carRepository.findAll();
     }
 
     public List<Car> getCars(String brand){
-
+        return carRepository.getCarByBrand(brand);
     }
 
     public List<Car> getCars(String brand, String model){
-
+        return carRepository.getCarByBrandAndModel(brand, model);
     }
 
     public Car createCar(Car car){
-
+        return carRepository.save(car);
     }
 
     public Car getCar(Long id){
-
+        return carRepository.getCarById(id);
     }
 
 
