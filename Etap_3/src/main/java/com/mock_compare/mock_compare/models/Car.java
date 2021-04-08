@@ -21,5 +21,8 @@ public class Car {
     private String model;
 
     @Column
+    private String salesman;
+
+    @Column
     private Boolean isAvailable;
 }
