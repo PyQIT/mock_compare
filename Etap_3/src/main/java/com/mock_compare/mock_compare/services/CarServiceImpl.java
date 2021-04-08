@@ -1,5 +1,6 @@
 package com.mock_compare.mock_compare.services;
 
+import com.mock_compare.mock_compare.exceptions.CarNotFoundException;
 import com.mock_compare.mock_compare.models.Car;
 import com.mock_compare.mock_compare.repositories.CarRepository;
 import lombok.RequiredArgsConstructor;
@@ -32,7 +33,7 @@ public class CarServiceImpl implements CarService{
 
     public Car getCar(Long id){
         return carRepository.findById(id).orElseThrow(
-                () -> new CarNotFoundException("Car id=" + id + " not found.")
+                () -> new CarNotFoundException("Car id=" + id + " not found."));
     }
 
 }
