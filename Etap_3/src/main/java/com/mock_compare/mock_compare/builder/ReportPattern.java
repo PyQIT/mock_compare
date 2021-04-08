@@ -8,7 +8,7 @@ public class ReportPattern {
     private String clientName;
     private String clientSurname;
     private Car car;
-   // private Employee employee;
+    private Employee employee;
     private CarDealer carDealer;
     private String data;
     private boolean accepted;
@@ -20,7 +20,7 @@ public class ReportPattern {
         this.typ = builder.typ;
         this.clientSurname = builder.clientSurname;
         this.data = builder.data;
-      //  this.employee = builder.employee;
+        this.employee = builder.employee;
         this.carDealer = builder.carDealer;
         this.accepted = false;
     }
@@ -66,7 +66,7 @@ public class ReportPattern {
         private String clientName;
         private String clientSurname;
         private Car car;
-      //  private Employee employee;
+        private Employee employee;
         private CarDealer carDealer;
         private String data;
         private boolean accepted;
@@ -97,10 +97,10 @@ public class ReportPattern {
               return this;
         }
 
-     //   public ReportBuilder setEmployee(Employee employee){
-     //       this.employee = employee;
-     //       return this;
-     //   }
+        public ReportBuilder setEmployee(Employee employee){
+            this.employee = employee;
+            return this;
+        }
 
         public ReportBuilder setCarDealer(CarDealer carDealer){
             this.carDealer = carDealer;
