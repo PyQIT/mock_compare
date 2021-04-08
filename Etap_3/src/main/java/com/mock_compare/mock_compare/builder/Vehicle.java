@@ -1,4 +1,4 @@
-package com.mock_compare.mock_compare.factory;
+package com.mock_compare.mock_compare.builder;
 
 public abstract class Vehicle {
 

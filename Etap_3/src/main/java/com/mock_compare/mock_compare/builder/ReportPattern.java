@@ -1,4 +1,5 @@
-package com.mock_compare.mock_compare.factory;
+package com.mock_compare.mock_compare.builder;
+
 
 public class ReportPattern {
 
@@ -6,9 +7,9 @@ public class ReportPattern {
     private String typ;
     private String clientName;
     private String clientSurname;
-  //  private Car car;
+    private Car car;
    // private Employee employee;
-   // private Salon salon;
+    private CarDealer carDealer;
     private String data;
     private boolean accepted;
 
@@ -20,7 +21,7 @@ public class ReportPattern {
         this.clientSurname = builder.clientSurname;
         this.data = builder.data;
       //  this.employee = builder.employee;
-     //   this.salon = builder.salon;
+        this.carDealer = builder.carDealer;
         this.accepted = false;
     }
 
@@ -44,19 +45,14 @@ public class ReportPattern {
         return data;
     }
 
-  //  public String getEmployee(){
-  //      return employee;
-    // }
-
-  //  public String getSalon(){
-    //    return salon;
-    //}
 
     public boolean getAccepted(){
         return accepted;
     }
 
-  //  public void setCar(Car car) { this.car = car;}
+    public void setCarDealer(CarDealer carDealer){ this.carDealer = carDealer; }
+
+    public void setCar(Car car) { this.car = car;}
 
     public void modifyAccepted(boolean accepted)
     {
@@ -69,11 +65,11 @@ public class ReportPattern {
         private String typ;
         private String clientName;
         private String clientSurname;
-     //   private Car car;
+        private Car car;
       //  private Employee employee;
-      //  private Salon salon;
+        private CarDealer carDealer;
         private String data;
-        private boolean przyjete;
+        private boolean accepted;
 
 
         public ReportBuilder setPlace(String place){
@@ -96,20 +92,20 @@ public class ReportPattern {
             return this;
         }
 
-     //   public ReportBuilder setCar(Car car){
-     //       this.car = car;
-     //       return this;
-     //   }
+        public ReportBuilder setCar(Car car){
+              this.car = car;
+              return this;
+        }
 
      //   public ReportBuilder setEmployee(Employee employee){
      //       this.employee = employee;
      //       return this;
      //   }
 
-     //   public ReportBuilder setSalon(Salon salon){
-     //       this.salon = salon;
-     //       return this;
-     //   }
+        public ReportBuilder setCarDealer(CarDealer carDealer){
+            this.carDealer = carDealer;
+            return this;
+        }
 
         public ReportBuilder setData(String data){
             this.data = data;
