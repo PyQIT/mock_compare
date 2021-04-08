@@ -31,8 +31,8 @@ public class CarServiceImpl implements CarService{
     }
 
     public Car getCar(Long id){
-        return carRepository.getCarById(id);
+        return carRepository.findById(id).orElseThrow(
+                () -> new CarNotFoundException("Car id=" + id + " not found.")
     }
-
 
 }
