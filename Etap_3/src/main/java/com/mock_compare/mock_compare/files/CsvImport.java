@@ -8,7 +8,6 @@ import com.opencsv.exceptions.CsvException;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 public class CsvImport {
@@ -20,10 +19,8 @@ public class CsvImport {
                 .withCSVParser(csvParser)
                 .withSkipLines(1)
                 .build()) {
-            List<String[]> r = reader.readAll();
-            r.forEach(x -> System.out.println(Arrays.toString(x)));
 
-            return r;
+            return reader.readAll();
         }
     }
 }
