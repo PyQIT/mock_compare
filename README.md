@@ -1,2 +1,2 @@
 # mock_compare
-Mockito Powermockito EasyMock JUnit XUnit NUnit
+Mockito EasyMock AssertJ JUnit XUnit NUnit
