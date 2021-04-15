@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "byCJQy7Ob5zwtVLvuZi4V4S1HrC9xwN2trBnQhPt34cYBKFB4MSelIE8mHbNYelppSbATl5TDfNe3Y2E7TYWlw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\mock_compare\\Etap_3\\mock_compare_vs\\mock_compare_vs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
