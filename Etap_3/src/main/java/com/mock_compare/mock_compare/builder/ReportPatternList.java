@@ -24,7 +24,8 @@ public class ReportPatternList {
         carDealerList.initList();
         VehicleList vehicleList = new VehicleList();
         vehicleList.initList();
-        //Pracownicy
+        SalesmanList salesmanList = new SalesmanList();
+        salesmanList.initList();
 
         ReportPattern report = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList().get(2)).build();
         ReportPattern report1 = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList().get(1)).build();

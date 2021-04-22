@@ -104,5 +104,4 @@ public class ReportPattern {
             .setData("test")
             .build().reportPattern1;
 
-
 }
