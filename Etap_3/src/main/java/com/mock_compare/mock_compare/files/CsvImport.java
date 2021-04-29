@@ -13,7 +13,7 @@ import java.util.List;
 public class CsvImport {
 
     public List<String[]> convertCsvToArray(String csvFile) throws IOException, CsvException {
-        CSVParser csvParser = new CSVParserBuilder().withSeparator(';').build();
+        CSVParser csvParser = new CSVParserBuilder().withSeparator(',').build();
         try (CSVReader reader = new CSVReaderBuilder(
                 new FileReader(csvFile))
                 .withCSVParser(csvParser)
