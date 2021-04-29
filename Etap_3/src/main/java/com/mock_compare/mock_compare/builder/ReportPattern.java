@@ -97,7 +97,7 @@ public class ReportPattern {
 
     ReportBuilder reportPattern1 = new ReportBuilder()
             .setClientName("Krzysztof")
-            .setClientSurname("Siczek")
+            .setClientSurname("Pyk")
             .setCar(car)
             .setEmployee(employee)
             .setCarDealer(carDealer)
