@@ -3,8 +3,6 @@ package com.mock_compare.mock_compare.builder;
 
 public class ReportPattern {
 
-    private String place;
-    private String typ;
     private String clientName;
     private String clientSurname;
     private Car car;
@@ -16,8 +14,6 @@ public class ReportPattern {
     private ReportPattern(ReportBuilder builder)
     {
         this.clientName = builder.clientName;
-        this.place =  builder.place;
-        this.typ = builder.typ;
         this.clientSurname = builder.clientSurname;
         this.data = builder.data;
         this.employee = builder.employee;
@@ -29,13 +25,6 @@ public class ReportPattern {
         return clientName;
     }
 
-    public String getPlace(){
-        return place;
-    }
-
-    public String getTyp(){
-        return typ;
-    }
 
     public String getClientSurname() {
         return clientSurname;
@@ -61,8 +50,6 @@ public class ReportPattern {
 
 
     public static class ReportBuilder{
-        private String place;
-        private String typ;
         private String clientName;
         private String clientSurname;
         private Car car;
@@ -71,16 +58,6 @@ public class ReportPattern {
         private String data;
         private boolean accepted;
 
-
-        public ReportBuilder setPlace(String place){
-            this.place = place;
-            return this;
-        }
-
-        public ReportBuilder setTyp(String typ){
-            this.typ= typ;
-            return this;
-        }
 
         public ReportBuilder setClientName(String clientName){
             this.clientName = clientName;
@@ -118,7 +95,13 @@ public class ReportPattern {
 
     }
 
-
-
+    ReportBuilder reportPattern1 = new ReportBuilder()
+            .setClientName("Krzysztof")
+            .setClientSurname("Pyk")
+            .setCar(car)
+            .setEmployee(employee)
+            .setCarDealer(carDealer)
+            .setData("test")
+            .build().reportPattern1;
 
 }
