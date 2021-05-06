@@ -61,10 +61,6 @@ public class VehicleList extends Car {
 
         car.setCar("VSSZZZ5FZJR056379", "WR12345", "SEAT", "hatchback", "LOVER1234");
         car.setVehicleOverview(true);
-        vehicleList.add(car8);
-
-        car.setCar("WP0ZZZ99ZRS310151", "WRA12353", "PORSCHE", "liftback", "GITASD1252");
-        car.setVehicleOverview(true);
         vehicleList.add(car9);
 
     }

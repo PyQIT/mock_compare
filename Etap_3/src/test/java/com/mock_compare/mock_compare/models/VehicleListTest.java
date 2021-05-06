@@ -36,4 +36,51 @@ public class VehicleListTest {
 
     }
 
+    @Test
+    public void quantityOfPositiveOverviews(){
+
+        //given
+        VehicleList vehicleList = mock(VehicleList.class);
+
+        //when
+        when(vehicleList.getListPositiveOverview()).thenReturn(setPositiveOverview());
+
+        //then
+        assertThat(vehicleList.getListPositiveOverview(), Matchers.hasSize(9));
+    }
+
+    private List<Vehicle> setPositiveOverview(){
+
+        VehicleList vehicleList = new VehicleList();
+        vehicleList.initList();
+
+        return vehicleList.getListPositiveOverview();
+
+    }
+
+    @Test
+    public void quantityOfNegativeOverviews(){
+
+        //given
+        VehicleList vehicleList = mock(VehicleList.class);
+
+        //when
+        when(vehicleList.getListNegativeOverview()).thenReturn(setNegativeOverview());
+
+        //then
+        assertThat(vehicleList.getListNegativeOverview(), Matchers.hasSize(1));
+
+    }
+
+    private List<Vehicle> setNegativeOverview(){
+
+        VehicleList vehicleList = new VehicleList();
+        vehicleList.initList();
+
+        return vehicleList.getListNegativeOverview();
+
+    }
+
+
+
 }
