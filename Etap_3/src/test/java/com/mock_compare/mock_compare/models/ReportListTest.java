@@ -26,7 +26,7 @@ public class ReportListTest {
         when(reportList.getReportList()).thenReturn(setReport());
 
         //then
-        assertThat(reportList.getReportList(), Matchers.hasSize(7));
+        assertThat(reportList.getReportList(), Matchers.hasSize(0));
 
 }
 
