@@ -2,7 +2,6 @@ package com.mock_compare.mock_compare.models;
 
 import com.mock_compare.mock_compare.builder.CarList;
 import com.mock_compare.mock_compare.builder.Car;
-import com.mock_compare.mock_compare.builder.VehicleList;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
@@ -34,5 +33,6 @@ public class CarListTest {
 
         return carList.getCarList();
     }
+
 
 }
