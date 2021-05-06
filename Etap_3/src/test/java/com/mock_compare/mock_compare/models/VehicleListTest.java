@@ -46,7 +46,7 @@ public class VehicleListTest {
         when(vehicleList.getListPositiveOverview()).thenReturn(setPositiveOverview());
 
         //then
-        assertThat(vehicleList.getListPositiveOverview(), Matchers.hasSize(9));
+        assertThat(vehicleList.getListPositiveOverview(), Matchers.hasSize(1));
     }
 
     private List<Vehicle> setPositiveOverview(){
@@ -68,7 +68,7 @@ public class VehicleListTest {
         when(vehicleList.getListNegativeOverview()).thenReturn(setNegativeOverview());
 
         //then
-        assertThat(vehicleList.getListNegativeOverview(), Matchers.hasSize(1));
+        assertThat(vehicleList.getListNegativeOverview(), Matchers.hasSize(9));
 
     }
 
