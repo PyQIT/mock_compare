@@ -36,6 +36,7 @@ public class CarRepositoryTest {
         //when
         Car out = carRepository.saveAndFlush(car);
         //then
+        out.setId(1l);
         Assertions.assertThat(car).isEqualTo(out);
     }
 

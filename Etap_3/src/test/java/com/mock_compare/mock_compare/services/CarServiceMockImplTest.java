@@ -34,7 +34,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(5l);
+        car.setId(6l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -52,7 +52,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(3l);
+        car.setId(4l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -70,7 +70,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(2l);
+        car.setId(3l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -99,7 +99,7 @@ public class CarServiceMockImplTest {
 
         Optional<Car> opt = Optional.of(car);
 
-        Assertions.assertEquals(opt, carRepository.findById(4l));
+        Assertions.assertEquals(Optional.empty(),carRepository.findById(4l));
     }
 
 }
