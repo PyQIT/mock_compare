@@ -1,4 +1,4 @@
-package com.mock_compare.mock_compare.models;
+package com.mock_compare.mock_compare.builder;
 
 import com.mock_compare.mock_compare.builder.ReportList;
 import com.mock_compare.mock_compare.builder.Report;

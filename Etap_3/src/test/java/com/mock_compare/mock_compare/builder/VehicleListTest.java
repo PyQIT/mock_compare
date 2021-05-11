@@ -1,4 +1,4 @@
-package com.mock_compare.mock_compare.models;
+package com.mock_compare.mock_compare.builder;
 
 import com.mock_compare.mock_compare.builder.VehicleList;
 import com.mock_compare.mock_compare.builder.Vehicle;
