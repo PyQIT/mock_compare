@@ -39,5 +39,4 @@ public class CarRepositoryTest {
         out.setId(1l);
         Assertions.assertThat(car).isEqualTo(out);
     }
-
 }

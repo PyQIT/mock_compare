@@ -4,6 +4,7 @@ import com.mock_compare.mock_compare.builder.SalesmanList;
 import com.mock_compare.mock_compare.builder.Salesman;
 import org.hamcrest.Matchers;
 import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 
@@ -11,6 +12,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@SpringBootTest
 public class SalesmanListTest {
 
     @Test
