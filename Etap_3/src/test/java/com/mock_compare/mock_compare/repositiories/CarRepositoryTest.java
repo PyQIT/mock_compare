@@ -2,7 +2,7 @@ package com.mock_compare.mock_compare.repositiories;
 
 import com.mock_compare.mock_compare.models.Car;
 import com.mock_compare.mock_compare.repositories.CarRepository;
-import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -37,6 +37,6 @@ public class CarRepositoryTest {
         Car out = carRepository.saveAndFlush(car);
         //then
         out.setId(1l);
-        Assertions.assertThat(car).isEqualTo(out);
+        Assertions.assertEquals(car, out);
     }
 }

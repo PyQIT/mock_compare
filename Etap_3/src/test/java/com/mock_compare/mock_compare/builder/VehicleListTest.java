@@ -1,6 +1,5 @@
 package com.mock_compare.mock_compare.builder;
 
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -8,7 +7,7 @@ import java.util.List;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.hamcrest.MatcherAssert.assertThat;
+import org.junit.jupiter.api.Assertions;
 
 @SpringBootTest
 public class VehicleListTest {
@@ -23,7 +22,7 @@ public class VehicleListTest {
         when(vehicleList.getVehicleList()).thenReturn(setVehicle());
 
         //then
-        assertThat(vehicleList.getVehicleList(), Matchers.hasSize(10));
+        Assertions.assertEquals(vehicleList.getVehicleList().size(), 10);
 
     }
 
@@ -46,7 +45,7 @@ public class VehicleListTest {
         when(vehicleList.getListPositiveOverview()).thenReturn(setPositiveOverview());
 
         //then
-        assertThat(vehicleList.getListPositiveOverview(), Matchers.hasSize(1));
+        Assertions.assertEquals(vehicleList.getListPositiveOverview().size(), 1);
     }
 
     private List<Vehicle> setPositiveOverview(){
@@ -68,7 +67,7 @@ public class VehicleListTest {
         when(vehicleList.getListNegativeOverview()).thenReturn(setNegativeOverview());
 
         //then
-        assertThat(vehicleList.getListNegativeOverview(), Matchers.hasSize(9));
+        Assertions.assertEquals(vehicleList.getListNegativeOverview().size(), 9);
 
     }
 
