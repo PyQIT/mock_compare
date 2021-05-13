@@ -1,21 +1,17 @@
 package com.mock_compare.mock_compare.builder;
 
-import com.mock_compare.mock_compare.builder.SalesmanList;
-import com.mock_compare.mock_compare.builder.Salesman;
-
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import org.junit.jupiter.api.Assertions;
 
+import static org.assertj.core.api.Assertions.*;
 
 @SpringBootTest
-public class SalesmanListTest {
+public class SalesmanListAssertJMockitoTest {
 
     @Test
     public void getSalesmanList(){
@@ -27,7 +23,7 @@ public class SalesmanListTest {
         when(salesmanList.getSalesmanList()).thenReturn(setSalesmanList());
 
         //then
-        Assertions.assertEquals(salesmanList.getSalesmanList().size(), 3);
+        assertThat(salesmanList.getSalesmanList().size()).isEqualTo(3);
 
 
     }
@@ -39,6 +35,5 @@ public class SalesmanListTest {
         return salesmanList.getSalesmanList();
 
     }
-
 
 }

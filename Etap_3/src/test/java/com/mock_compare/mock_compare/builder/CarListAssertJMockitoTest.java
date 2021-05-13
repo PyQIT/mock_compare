@@ -1,17 +1,17 @@
 package com.mock_compare.mock_compare.builder;
 
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import org.junit.jupiter.api.Assertions;
+
+import static org.assertj.core.api.Assertions.*;
 
 @SpringBootTest
-public class CarListTest {
+public class CarListAssertJMockitoTest {
 
     @Test
     public void getCarList(){
@@ -23,7 +23,7 @@ public class CarListTest {
         when(carList.getCarList()).thenReturn(setCar());
 
         //then
-        Assertions.assertEquals(carList.getCarList().size(), 5);
+        assertThat(carList.getCarList().size()).isEqualTo(5);
 
     }
 
@@ -33,6 +33,5 @@ public class CarListTest {
 
         return carList.getCarList();
     }
-
 
 }

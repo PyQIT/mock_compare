@@ -7,10 +7,11 @@ import java.util.List;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import org.junit.jupiter.api.Assertions;
+
+import static org.assertj.core.api.Assertions.*;
 
 @SpringBootTest
-public class CarDealerListTest {
+public class CarDealerListAssertJMockitoTest {
 
     @Test
     public void getCarDealerList(){
@@ -23,7 +24,7 @@ public class CarDealerListTest {
         when(carDealerList.getCarDealerList()).thenReturn(setCarDealer());
 
         //then
-        Assertions.assertEquals(carDealerList.getCarDealerList().size(), 5);
+        assertThat(carDealerList.getCarDealerList().size()).isEqualTo(5);
 
     }
 
@@ -35,6 +36,5 @@ public class CarDealerListTest {
         return carDealerList.getCarDealerList();
 
     }
-
 
 }

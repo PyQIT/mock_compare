@@ -6,15 +6,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.assertj.core.api.Assertions.*;
 
 @SpringBootTest
-public class CsvImportTest {
-
+public class CsvImportAssertJTest {
     @Test
     void convertCsvToArraySucces() throws IOException, CsvException {
         CsvImport csvImport = new CsvImport();
 
-        assertNotEquals("test",csvImport.convertCsvToArray("C:\\Users\\Asus\\mock_compare\\Etap_3\\test.csv"));
+        assertThat("test").isNotEqualTo(csvImport.convertCsvToArray("C:\\Users\\Asus\\mock_compare\\Etap_3\\test.csv"));
     }
 }

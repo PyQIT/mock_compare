@@ -2,15 +2,16 @@ package com.mock_compare.mock_compare.repositiories;
 
 import com.mock_compare.mock_compare.models.Car;
 import com.mock_compare.mock_compare.repositories.CarRepository;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.assertj.core.api.Assertions.*;
+
 @SpringBootTest
-public class CarRepositoryTest {
+public class CarRepositoryAssertJTest {
     @Autowired
     private CarRepository carRepository;
 
@@ -37,6 +38,6 @@ public class CarRepositoryTest {
         Car out = carRepository.saveAndFlush(car);
         //then
         out.setId(1l);
-        Assertions.assertEquals(car, out);
+        assertThat(car).isEqualTo(out);
     }
 }

@@ -7,10 +7,11 @@ import java.util.List;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import org.junit.jupiter.api.Assertions;
+
+import static org.assertj.core.api.Assertions.*;
 
 @SpringBootTest
-public class VehicleListTest {
+public class VehicleListAssertJMockitoTest {
 
     @Test
     public void getVehicleList(){
@@ -22,7 +23,7 @@ public class VehicleListTest {
         when(vehicleList.getVehicleList()).thenReturn(setVehicle());
 
         //then
-        Assertions.assertEquals(vehicleList.getVehicleList().size(), 10);
+        assertThat(vehicleList.getVehicleList().size()).isEqualTo(10);
 
     }
 
@@ -45,7 +46,7 @@ public class VehicleListTest {
         when(vehicleList.getListPositiveOverview()).thenReturn(setPositiveOverview());
 
         //then
-        Assertions.assertEquals(vehicleList.getListPositiveOverview().size(), 1);
+        assertThat(vehicleList.getListPositiveOverview().size()).isEqualTo(1);
     }
 
     private List<Vehicle> setPositiveOverview(){
@@ -67,7 +68,7 @@ public class VehicleListTest {
         when(vehicleList.getListNegativeOverview()).thenReturn(setNegativeOverview());
 
         //then
-        Assertions.assertEquals(vehicleList.getListNegativeOverview().size(), 9);
+        assertThat(vehicleList.getListNegativeOverview().size()).isEqualTo(9);
 
     }
 
@@ -79,6 +80,7 @@ public class VehicleListTest {
         return vehicleList.getListNegativeOverview();
 
     }
+
 
 
 

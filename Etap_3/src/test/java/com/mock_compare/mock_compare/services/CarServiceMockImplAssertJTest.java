@@ -3,21 +3,22 @@ package com.mock_compare.mock_compare.services;
 import com.mock_compare.mock_compare.models.Car;
 import com.mock_compare.mock_compare.repositories.CarRepository;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.assertj.core.api.Assertions.*;
+
 import java.util.ArrayList;
 import java.util.Optional;
 
 @SpringBootTest
-public class CarServiceMockImplTest {
+public class CarServiceMockImplAssertJTest {
 
     @Autowired
     private CarRepository carRepository;
-    private Optional Optional;
+    private java.util.Optional Optional;
 
     @BeforeEach
     void setUp(){
@@ -34,7 +35,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(11l);
+        car.setId(7l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -43,8 +44,7 @@ public class CarServiceMockImplTest {
 
         carRepository.saveAndFlush(car);
 
-
-        Assertions.assertEquals(cars, carRepository.findAll());
+        assertThat(cars).isEqualTo(carRepository.findAll());
     }
 
     @Test
@@ -52,7 +52,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(9l);
+        car.setId(5l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -61,8 +61,7 @@ public class CarServiceMockImplTest {
 
         carRepository.saveAndFlush(car);
 
-
-        Assertions.assertEquals(cars, carRepository.getCarByBrand("BMW"));
+        assertThat(cars).isEqualTo(carRepository.getCarByBrand("BMW"));
     }
 
     @Test
@@ -70,7 +69,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(8l);
+        car.setId(4l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -79,8 +78,7 @@ public class CarServiceMockImplTest {
 
         carRepository.saveAndFlush(car);
 
-
-        Assertions.assertEquals(cars, carRepository.getCarByBrandAndModel("BMW","E46"));
+        assertThat(cars).isEqualTo(carRepository.getCarByBrandAndModel("BMW","E46"));
     }
 
     @Test
@@ -99,7 +97,6 @@ public class CarServiceMockImplTest {
 
         Optional<Car> opt = Optional.of(car);
 
-        Assertions.assertEquals(Optional.empty(),carRepository.findById(4l));
+        assertThat(Optional.empty()).isEqualTo(carRepository.findById(4l));
     }
-
 }
