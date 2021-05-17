@@ -34,7 +34,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(11l);
+        car.setId(12l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -52,7 +52,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(9l);
+        car.setId(10l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -70,7 +70,7 @@ public class CarServiceMockImplTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(8l);
+        car.setId(9l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
