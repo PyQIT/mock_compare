@@ -1,14 +1,12 @@
 package com.mock_compare.mock_compare.builder;
 
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.easymock.EasyMock.*;
+import org.junit.jupiter.api.Assertions;
 
 @SpringBootTest
 public class ReportListEasyMockTest {
@@ -17,21 +15,21 @@ public class ReportListEasyMockTest {
     public void getReportList(){
 
         //given
-        ReportList reportList = mock(ReportList.class);
+        ReportList reportList = createNiceMock(ReportList.class);
 
         //when
-        when(reportList.getReportList()).thenReturn(setReport());
-
+        expect(reportList.getReportList()).andStubReturn(setReport());
+        replay(reportList);
         //then
-        assertThat(reportList.getReportList(), Matchers.hasSize(0));
+        Assertions.assertEquals(reportList.getReportList().size(), 0);
 
-}
+    }
 
-private List<Report> setReport(){
+    private List<Report> setReport(){
         ReportList reportList = new ReportList();
         reportList.initList();
 
         return reportList.getReportList();
-}
+    }
 
 }

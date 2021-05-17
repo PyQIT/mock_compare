@@ -12,19 +12,20 @@ import static org.easymock.EasyMock.*;
 @SpringBootTest
 public class VehicleListEasyMockTest {
 
-//    @Test
-//    public void getVehicleList(){
-//
-//        //given
-//        VehicleList vehicleList = mock(VehicleList.class);
-//
-//        //when
-//        expect(vehicleList.getVehicleList()).andReturn(setVehicle());
-//
-//        //then
-//        Assertions.assertEquals(vehicleList.getVehicleList().size(), 10);
-//
-//    }
+    @Test
+    public void getVehicleList(){
+
+        //given
+        VehicleList vehicleList = createNiceMock(VehicleList.class);
+
+        //when
+        expect(vehicleList.getVehicleList()).andStubReturn(setVehicle());
+        replay(vehicleList);
+
+        //then
+        Assertions.assertEquals(vehicleList.getVehicleList().size(), 10);
+
+    }
 
     private List<Vehicle> setVehicle(){
 
@@ -35,50 +36,52 @@ public class VehicleListEasyMockTest {
 
     }
 
-//    @Test
-//    public void quantityOfPositiveOverviews(){
-//
-//        //given
-//        VehicleList vehicleList = mock(VehicleList.class);
-//
-//        //when
-//        when(vehicleList.getListPositiveOverview()).thenReturn(setPositiveOverview());
-//
-//        //then
-//        Assertions.assertEquals(vehicleList.getListPositiveOverview().size(), 1);
-//    }
-//
-//    private List<Vehicle> setPositiveOverview(){
-//
-//        VehicleList vehicleList = new VehicleList();
-//        vehicleList.initList();
-//
-//        return vehicleList.getListPositiveOverview();
-//
-//    }
-//
-//    @Test
-//    public void quantityOfNegativeOverviews(){
-//
-//        //given
-//        VehicleList vehicleList = mock(VehicleList.class);
-//
-//        //when
-//        when(vehicleList.getListNegativeOverview()).thenReturn(setNegativeOverview());
-//
-//        //then
-//        Assertions.assertEquals(vehicleList.getListNegativeOverview().size(), 9);
-//
-//    }
-//
-//    private List<Vehicle> setNegativeOverview(){
-//
-//        VehicleList vehicleList = new VehicleList();
-//        vehicleList.initList();
-//
-//        return vehicleList.getListNegativeOverview();
-//
-//    }
+    @Test
+    public void quantityOfPositiveOverviews(){
+
+        //given
+        VehicleList vehicleList = createNiceMock(VehicleList.class);
+
+        //when
+        expect(vehicleList.getListPositiveOverview()).andStubReturn(setPositiveOverview());
+        replay(vehicleList);
+
+        //then
+        Assertions.assertEquals(vehicleList.getListPositiveOverview().size(), 1);
+    }
+
+    private List<Vehicle> setPositiveOverview(){
+
+        VehicleList vehicleList = new VehicleList();
+        vehicleList.initList();
+
+        return vehicleList.getListPositiveOverview();
+
+    }
+
+    @Test
+    public void quantityOfNegativeOverviews(){
+
+        //given
+        VehicleList vehicleList = createNiceMock(VehicleList.class);
+
+        //when
+        expect(vehicleList.getListNegativeOverview()).andStubReturn(setNegativeOverview());
+        replay(vehicleList);
+
+        //then
+        Assertions.assertEquals(vehicleList.getListNegativeOverview().size(), 9);
+
+    }
+
+    private List<Vehicle> setNegativeOverview(){
+
+        VehicleList vehicleList = new VehicleList();
+        vehicleList.initList();
+
+        return vehicleList.getListNegativeOverview();
+
+    }
 
 
 

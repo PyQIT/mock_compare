@@ -1,14 +1,13 @@
 package com.mock_compare.mock_compare.builder;
 
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.easymock.EasyMock.*;
+
+import static org.assertj.core.api.Assertions.*;
 
 @SpringBootTest
 public class VehicleListAssertJEasyMockTest {
@@ -17,13 +16,14 @@ public class VehicleListAssertJEasyMockTest {
     public void getVehicleList(){
 
         //given
-        VehicleList vehicleList = mock(VehicleList.class);
+        VehicleList vehicleList = createNiceMock(VehicleList.class);
 
         //when
-        when(vehicleList.getVehicleList()).thenReturn(setVehicle());
+        expect(vehicleList.getVehicleList()).andStubReturn(setVehicle());
+        replay(vehicleList);
 
         //then
-        assertThat(vehicleList.getVehicleList(), Matchers.hasSize(10));
+        assertThat(vehicleList.getVehicleList().size()).isEqualTo(10);
 
     }
 
@@ -40,13 +40,14 @@ public class VehicleListAssertJEasyMockTest {
     public void quantityOfPositiveOverviews(){
 
         //given
-        VehicleList vehicleList = mock(VehicleList.class);
+        VehicleList vehicleList = createNiceMock(VehicleList.class);
 
         //when
-        when(vehicleList.getListPositiveOverview()).thenReturn(setPositiveOverview());
+        expect(vehicleList.getListPositiveOverview()).andStubReturn(setPositiveOverview());
+        replay(vehicleList);
 
         //then
-        assertThat(vehicleList.getListPositiveOverview(), Matchers.hasSize(1));
+        assertThat(vehicleList.getListPositiveOverview().size()).isEqualTo(1);
     }
 
     private List<Vehicle> setPositiveOverview(){
@@ -62,13 +63,14 @@ public class VehicleListAssertJEasyMockTest {
     public void quantityOfNegativeOverviews(){
 
         //given
-        VehicleList vehicleList = mock(VehicleList.class);
+        VehicleList vehicleList = createNiceMock(VehicleList.class);
 
         //when
-        when(vehicleList.getListNegativeOverview()).thenReturn(setNegativeOverview());
+        expect(vehicleList.getListNegativeOverview()).andStubReturn(setNegativeOverview());
+        replay(vehicleList);
 
         //then
-        assertThat(vehicleList.getListNegativeOverview(), Matchers.hasSize(9));
+        assertThat(vehicleList.getListNegativeOverview().size()).isEqualTo(9);
 
     }
 
