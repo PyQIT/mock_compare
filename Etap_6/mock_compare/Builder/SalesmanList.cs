@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace mock_compare.Builder
+{
+    public class SalesmanList
+    {
+        private ArrayList salesmanList;
+
+        public SalesmanList()
+        {
+            salesmanList = new ArrayList();
+        }
+
+        public void initList()
+        {
+
+            CarDealerList carDealerList = new CarDealerList();
+            carDealerList.initList();
+
+            Salesman salesman1 = new Salesman();
+            salesman1.setEmployee("Krzysztof", "Siczek", "9324424212", "666111222", "Swietokrzyska 123", "salesman");
+            salesman1.setCarDealer(carDealerList[0].getCarDealerList());
+            addSalesmanToList(salesman1);
+
+            Salesman salesman2 = new Salesman();
+            salesman2.setEmployee("Janusz", "Boczek", "9702324212", "432214232", "Warszawska 2", "salesman");
+            salesman2.setCarDealer(carDealerList[1].getCarDealerList());
+            addSalesmanToList(salesman2);
+
+            Salesman salesman3 = new Salesman();
+            salesman3.setEmployee("Karol", "Soczek", "9703234212", "523123123", "Swietokrzyska 5", "salesman");
+            salesman3.setCarDealer(carDealerList[2].getCarDealerList());
+            addSalesmanToList(salesman3);
+
+
+        }
+
+        public void addSalesmanToList(Salesman salesman)
+        {
+            salesmanList.Add(salesman);
+        }
+
+        public ArrayList getSalesmanList()
+        {
+            return salesmanList;
+        }
+    }
+}
