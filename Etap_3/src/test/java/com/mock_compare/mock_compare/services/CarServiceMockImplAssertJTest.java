@@ -35,7 +35,7 @@ public class CarServiceMockImplAssertJTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(7l);
+        car.setId(8l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -52,7 +52,7 @@ public class CarServiceMockImplAssertJTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(5l);
+        car.setId(6l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 
@@ -69,7 +69,7 @@ public class CarServiceMockImplAssertJTest {
         Car car = new Car();
         car.setModel("E46");
         car.setBrand("BMW");
-        car.setId(4l);
+        car.setId(5l);
         car.setSalesman("Pracownik");
         car.setIsAvailable(true);
 

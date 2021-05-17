@@ -1,14 +1,12 @@
 package com.mock_compare.mock_compare.builder;
 
-import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.easymock.EasyMock.*;
+import org.junit.jupiter.api.Assertions;
 
 @SpringBootTest
 public class CarDealerListEasyMockTest {
@@ -17,14 +15,15 @@ public class CarDealerListEasyMockTest {
     public void getCarDealerList(){
 
         //given
-        CarDealerList carDealerList = mock(CarDealerList.class);
+        CarDealerList carDealerList = createNiceMock(CarDealerList.class);
 
 
         //when
-        when(carDealerList.getCarDealerList()).thenReturn(setCarDealer());
+        expect(carDealerList.getCarDealerList()).andStubReturn(setCarDealer());
+        replay(carDealerList);
 
         //then
-        assertThat(carDealerList.getCarDealerList(), Matchers.hasSize(5));
+        Assertions.assertEquals(carDealerList.getCarDealerList().size(), 5);
 
     }
 

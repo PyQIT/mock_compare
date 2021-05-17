@@ -1,16 +1,13 @@
 package com.mock_compare.mock_compare.builder;
 
-import com.mock_compare.mock_compare.builder.SalesmanList;
-import com.mock_compare.mock_compare.builder.Salesman;
-
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+
 import org.junit.jupiter.api.Assertions;
 
 
