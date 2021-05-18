@@ -27,6 +27,11 @@ namespace mock_compare.Builder
 
         }
 
+        internal object ElementAt(int v)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<CarDealer> getCarDealerList()
         {
             return carDealerList;

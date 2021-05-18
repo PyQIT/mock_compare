@@ -15,7 +15,7 @@ namespace mock_compare.Builder
         private String data;
         private Boolean accepted;
 
-        private ReportPattern(ReportBuilder builder)
+        ReportPattern(ReportBuilder builder)
         {
             this.clientName = builder.clientName;
             this.clientSurname = builder.clientSurname;
@@ -57,7 +57,7 @@ namespace mock_compare.Builder
         }
 
 
-        public static class ReportBuilder
+        public class ReportBuilder
         {
             private String clientName;
             private String clientSurname;
@@ -65,7 +65,7 @@ namespace mock_compare.Builder
             private Employee employee;
             private CarDealer carDealer;
             private String data;
-            private boolean accepted;
+            private Boolean accepted;
 
 
             public ReportBuilder setClientName(String clientName)
