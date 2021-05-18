@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace mock_compare.Builder
 {
-    public class Salesman
+    public class Salesman : Employee
     {
         private CarDealer carDealer;
 

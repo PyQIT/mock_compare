@@ -9,4 +9,37 @@
     <PackageReference Include="opencsv.dll" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Tests\NUnit\Builder\" />
+    <Folder Include="Tests\NUnit\Controllers\" />
+    <Folder Include="Tests\NUnit\Dto\" />
+    <Folder Include="Tests\NUnit\Files\" />
+    <Folder Include="Tests\NUnit\JustMock\Builder\" />
+    <Folder Include="Tests\NUnit\JustMock\Controllers\" />
+    <Folder Include="Tests\NUnit\JustMock\Dto\" />
+    <Folder Include="Tests\NUnit\JustMock\Files\" />
+    <Folder Include="Tests\NUnit\JustMock\Models\" />
+    <Folder Include="Tests\NUnit\Models\" />
+    <Folder Include="Tests\NUnit\TypeMock\Builder\" />
+    <Folder Include="Tests\NUnit\TypeMock\Controllers\" />
+    <Folder Include="Tests\NUnit\TypeMock\Dto\" />
+    <Folder Include="Tests\NUnit\TypeMock\Files\" />
+    <Folder Include="Tests\NUnit\TypeMock\Models\" />
+    <Folder Include="Tests\XUnit\Builder\" />
+    <Folder Include="Tests\XUnit\Controllers\" />
+    <Folder Include="Tests\XUnit\Dto\" />
+    <Folder Include="Tests\XUnit\Files\" />
+    <Folder Include="Tests\XUnit\JustMock\Builder\" />
+    <Folder Include="Tests\XUnit\JustMock\Controllers\" />
+    <Folder Include="Tests\XUnit\JustMock\Dto\" />
+    <Folder Include="Tests\XUnit\JustMock\Files\" />
+    <Folder Include="Tests\XUnit\JustMock\Models\" />
+    <Folder Include="Tests\XUnit\Models\" />
+    <Folder Include="Tests\XUnit\TypeMock\Builder\" />
+    <Folder Include="Tests\XUnit\TypeMock\Controllers\" />
+    <Folder Include="Tests\XUnit\TypeMock\Dto\" />
+    <Folder Include="Tests\XUnit\TypeMock\Files\" />
+    <Folder Include="Tests\XUnit\TypeMock\Models\" />
+  </ItemGroup>
+
 </Project>

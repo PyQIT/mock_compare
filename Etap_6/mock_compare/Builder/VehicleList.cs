@@ -8,11 +8,11 @@ namespace mock_compare.Builder
 {
     public class VehicleList : Car
     {
-        private ArrayList vehicleList;
+        private List<Car> vehicleList;
 
         public VehicleList()
         {
-            vehicleList = new ArrayList();
+            vehicleList = new List<Car>();
         }
 
         public void initList()
@@ -71,7 +71,7 @@ namespace mock_compare.Builder
 
         }
 
-        public ArrayList getVehicleList()
+        public List<Car> getVehicleList()
         {
             return vehicleList;
         }
@@ -80,7 +80,7 @@ namespace mock_compare.Builder
         {
             for (int i = 0; i < vehicleList.Capacity; i++)
             {
-                if (vehicleList[i].getIdentificationNumber().equals(identificationNumber))
+                if (vehicleList[i].getIdentificationNumber().Equals(identificationNumber))
                 {
                     return vehicleList[i];
                 }
@@ -88,9 +88,9 @@ namespace mock_compare.Builder
             return null;
         }
 
-        public ArrayList getListPositiveOverview()
+        public List<Car> getListPositiveOverview()
         {
-            ArrayList overViewPositive = new ArrayList();
+            List<Car> overViewPositive = new List<Car>();
             for (int i = 0; i < vehicleList.Capacity; i++)
             {
                 if (vehicleList[i].getVehicleOverView() == true)
@@ -101,9 +101,9 @@ namespace mock_compare.Builder
             return overViewPositive;
         }
 
-        public ArrayList getListNegativeOverview()
+        public List<Car> getListNegativeOverview()
         {
-            ArrayList overViewNegative = new ArrayList();
+            List<Car> overViewNegative = new List<Car>();
             for (int i = 0; i < vehicleList.Capacity; i++)
             {
                 if (vehicleList[i].getVehicleOverView() == false)

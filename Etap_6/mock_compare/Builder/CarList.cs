@@ -8,11 +8,11 @@ namespace mock_compare.Builder
 {
     public class CarList : Car
     {
-        private ArrayList carList;
+        public List<Car> carList;
 
         public CarList()
         {
-            carList = new ArrayList();
+            carList = new List<Car>();
         }
 
         public void initList()
@@ -41,7 +41,7 @@ namespace mock_compare.Builder
 
         }
 
-        public ArrayList getCarList()
+        public List<Car> getCarList()
         {
             return carList;
         }
@@ -51,7 +51,7 @@ namespace mock_compare.Builder
 
             for (int i = 0; i < carList.Capacity; i++)
             {
-                if (identificationNumber.Equals(carList[i].getIdentificationNumber()))
+                if (identificationNumber.Equals(carList[i]))
                 {
                     carList.Remove(carList[i]);
                 }

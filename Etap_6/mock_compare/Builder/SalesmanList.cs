@@ -8,11 +8,11 @@ namespace mock_compare.Builder
 {
     public class SalesmanList
     {
-        private ArrayList salesmanList;
+        private List<Salesman> salesmanList;
 
         public SalesmanList()
         {
-            salesmanList = new ArrayList();
+            salesmanList = new List<Salesman>();
         }
 
         public void initList()
@@ -44,7 +44,7 @@ namespace mock_compare.Builder
             salesmanList.Add(salesman);
         }
 
-        public ArrayList getSalesmanList()
+        public List<Salesman> getSalesmanList()
         {
             return salesmanList;
         }

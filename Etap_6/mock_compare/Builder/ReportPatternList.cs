@@ -8,11 +8,11 @@ namespace mock_compare.Builder
 {
     public class ReportPatternList
     {
-        ArrayList patternList;
+        List<ReportPattern> patternList;
 
         public ReportPatternList()
         {
-            patternList = new ArrayList();
+            patternList = new List<ReportPattern>();
         }
 
         public void addReportToList(ReportPattern report)
@@ -20,7 +20,7 @@ namespace mock_compare.Builder
             patternList.Add(report);
         }
 
-        public ArrayList getPatternList()
+        public List<ReportPattern> getPatternList()
         {
             return patternList;
         }

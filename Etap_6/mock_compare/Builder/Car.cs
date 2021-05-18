@@ -7,7 +7,7 @@ namespace mock_compare.Builder
 {
     public class Car : Vehicle
     {
-        private String registrationNumber;
+        public String registrationNumber;
 
         public void setCar(String identificationNumber, String registrationNumber, String brand, String type, String insurance)
         {

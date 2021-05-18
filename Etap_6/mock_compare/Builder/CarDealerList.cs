@@ -8,7 +8,7 @@ namespace mock_compare.Builder
 {
     public class CarDealerList
     {
-        private ArrayList carDealerList = new ArrayList();
+        private List<CarDealer> carDealerList = new List<CarDealer>();
 
         public void initList()
         {
@@ -27,7 +27,7 @@ namespace mock_compare.Builder
 
         }
 
-        public ArrayList getCarDealerList()
+        public List<CarDealer> getCarDealerList()
         {
             return carDealerList;
         }
@@ -43,7 +43,7 @@ namespace mock_compare.Builder
             {
                 if (carDealerList[i].Equals(carDealer))
                 {
-                    carDealerList.Remove(i);
+                    carDealerList.RemoveAt(i);
                 }
             }
         }
