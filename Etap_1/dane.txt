@@ -11,10 +11,10 @@ Windows, Java, C#, Mockito, EasyMock, JustMock, TypeMock, JUnit 5, AssertJ, XUni
 Harmonogram:
 Etap 2 - Instalacja i konfiguracja języków programowania oraz bibliotek przy wykorzystaniu narzędzi automatyzujących.
 Etap 3 - Przygotowanie schematu wykonywanych działań do porównania narzędzi testujących.
-Etap 4 - Porównanie bibliotek Mockito oraz EasyMock.
-Etap 5 - Porównanie bibliotek JUnit 5 oraz AssertJ.
-Etap 6 - Porównanie bibliotek JustMock oraz TypeMock.
-Etap 7 - Porównanie bibliotek XUnit oraz NUnit.
+Etap 4 - Porównanie bibliotek JUnit 5 oraz AssertJ.
+Etap 5 - Porównanie bibliotek Mockito oraz EasyMock.
+Etap 6 - Porównanie bibliotek XUnit oraz NUnit.
+Etap 7 - Porównanie bibliotek JustMock oraz TypeMock.
 Etap 8 - Wykonanie sprawozdania zawierającego wszystkie dokonane analizy łącznie z wykresami statystycznymi.
 
 Podział prac:
