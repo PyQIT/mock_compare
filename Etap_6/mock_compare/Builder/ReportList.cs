@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Moq;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,24 +9,24 @@ namespace mock_compare.Builder
 {
     public class ReportList
     {
-        ArrayList reportList;
+        List<ReportList> reportList;
 
         public ReportList()
         {
-            reportList = new ArrayList();
+            reportList = new List<ReportList>();
         }
 
-        public void addReportToList(Report report)
+        public void addReportToList(ReportList report)
         {
             reportList.Add(report);
         }
 
-        public ArrayList getReportList()
+        public List<ReportList> getReportList()
         {
             return reportList;
         }
 
-        public void removeReportFromList(Report report)
+        public void removeReportFromList(ReportList report)
         {
             reportList.Remove(report);
         }
@@ -53,6 +54,11 @@ namespace mock_compare.Builder
             Report report6 = new Report();
             report6.setReport("Kuba", "Walek", "21/06/2021");
 
+        }
+
+        public static implicit operator ReportList(Mock<ReportList> v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

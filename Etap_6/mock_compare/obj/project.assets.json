@@ -3221,6 +3221,7 @@
       "CsvHelper >= 27.0.3",
       "Moq >= 4.16.1",
       "NUnit >= 3.13.2",
+      "System.Collections.NonGeneric >= 4.3.0",
       "opencsv.dll >= 1.2.0"
     ]
   },
@@ -3276,6 +3277,10 @@
           "NUnit": {
             "target": "Package",
             "version": "[3.13.2, )"
+          },
+          "System.Collections.NonGeneric": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           },
           "opencsv.dll": {
             "target": "Package",
