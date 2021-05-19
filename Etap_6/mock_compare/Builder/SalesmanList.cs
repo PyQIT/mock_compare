@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Moq;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,6 +48,11 @@ namespace mock_compare.Builder
         public List<Salesman> getSalesmanList()
         {
             return salesmanList;
+        }
+
+        public static implicit operator SalesmanList(Mock<SalesmanList> v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

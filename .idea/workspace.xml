@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ce12e8-0069-4e09-8686-083c0e67ce12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/TestStore/0/000.testlog" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/TestStore/0/000.testlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csprojAssemblyReference.cache" afterDir="false" />
-    </list>
+    <list default="true" id="06ce12e8-0069-4e09-8686-083c0e67ce12" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
