@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace mock_compare.Builder
 {
@@ -9,19 +10,20 @@ namespace mock_compare.Builder
     {
         private String clientName;
         private String clientSurname;
-        private Car car;
-        private Employee employee;
-        private CarDealer carDealer;
+        static private Car car;
+        static private Employee employee;
+        static private CarDealer carDealer;
         private String data;
         private Boolean accepted;
 
         ReportPattern(ReportBuilder builder)
         {
+
             this.clientName = builder.clientName;
             this.clientSurname = builder.clientSurname;
             this.data = builder.data;
-            this.employee = builder.employee;
-            this.carDealer = builder.carDealer;
+            employee = builder.employee;
+            carDealer = builder.carDealer;
             this.accepted = false;
         }
 
@@ -47,9 +49,9 @@ namespace mock_compare.Builder
             return accepted;
         }
 
-        public void setCarDealer(CarDealer carDealer) { this.carDealer = carDealer; }
+        public void setCarDealer(CarDealer carDealer) { carDealer = carDealer; }
 
-        public void setCar(Car car) { this.car = car; }
+        public void setCar(Car car) { car = car; }
 
         public void modifyAccepted(Boolean accepted)
         {
@@ -59,13 +61,13 @@ namespace mock_compare.Builder
 
         public class ReportBuilder
         {
-            private String clientName;
-            private String clientSurname;
-            private Car car;
-            private Employee employee;
-            private CarDealer carDealer;
-            private String data;
-            private Boolean accepted;
+            public String clientName;
+            public String clientSurname;
+            public Car car;
+            public Employee employee;
+            public CarDealer carDealer;
+            public String data;
+            public Boolean accepted;
 
 
             public ReportBuilder setClientName(String clientName)

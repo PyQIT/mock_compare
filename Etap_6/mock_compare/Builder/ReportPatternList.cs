@@ -34,10 +34,10 @@ namespace mock_compare.Builder
             SalesmanList salesmanList = new SalesmanList();
             salesmanList.initList();
 
-            ReportPattern report = new ReportPattern.ReportBuilder().setCarDealer(carDealerList[2].getCarDealerList()).build();
-            ReportPattern report1 = new ReportPattern.ReportBuilder().setCarDealer(carDealerList[1].getCarDealerList()).build();
-            ReportPattern report2 = new ReportPattern.ReportBuilder().setCarDealer(carDealerList[4].getCarDealerList()).build();
-            ReportPattern report3 = new ReportPattern.ReportBuilder().setCarDealer(carDealerList[3].getCarDealerList()).build();
+            ReportPattern report = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList()[2]).build();
+            ReportPattern report1 = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList()[1]).build();
+            ReportPattern report2 = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList()[4]).build();
+            ReportPattern report3 = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList()[3]).build();
 
             patternList.Add(report);
             patternList.Add(report1);
