@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Moq;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,11 @@ namespace mock_compare.Builder
 {
     public class VehicleList : Car
     {
-        private List<Car> vehicleList;
+        private List<Vehicle> vehicleList;
 
         public VehicleList()
         {
-            vehicleList = new List<Car>();
+            vehicleList = new List<Vehicle>();
         }
 
         public void initList()
@@ -71,7 +72,7 @@ namespace mock_compare.Builder
 
         }
 
-        public List<Car> getVehicleList()
+        public List<Vehicle> getVehicleList()
         {
             return vehicleList;
         }
@@ -88,9 +89,9 @@ namespace mock_compare.Builder
             return null;
         }
 
-        public List<Car> getListPositiveOverview()
+        public List<Vehicle> getListPositiveOverview()
         {
-            List<Car> overViewPositive = new List<Car>();
+            List<Vehicle> overViewPositive = new List<Vehicle>();
             for (int i = 0; i < vehicleList.Capacity; i++)
             {
                 if (vehicleList[i].getVehicleOverView() == true)
@@ -101,9 +102,9 @@ namespace mock_compare.Builder
             return overViewPositive;
         }
 
-        public List<Car> getListNegativeOverview()
+        public List<Vehicle> getListNegativeOverview()
         {
-            List<Car> overViewNegative = new List<Car>();
+            List<Vehicle> overViewNegative = new List<Vehicle>();
             for (int i = 0; i < vehicleList.Capacity; i++)
             {
                 if (vehicleList[i].getVehicleOverView() == false)
@@ -112,6 +113,11 @@ namespace mock_compare.Builder
                 }
             }
             return overViewNegative;
+        }
+
+        public static implicit operator VehicleList(Mock<VehicleList> v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
