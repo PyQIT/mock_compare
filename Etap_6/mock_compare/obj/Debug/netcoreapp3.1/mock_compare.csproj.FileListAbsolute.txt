@@ -77,3 +77,12 @@ C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\obj\De
 C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\nunit.framework.dll
 C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\nunit.engine.dll
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\nunit.engine.core.dll
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\obj\Debug\netcoreapp3.1\mock_compare.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\studia\Projekt_TO\mock_compare\Etap_6\mock_compare\obj\Debug\netcoreapp3.1\mock_compare.MvcApplicationPartsAssemblyInfo.cache
