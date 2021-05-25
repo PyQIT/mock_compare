@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\studia\\Projekt_TO\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj": {}
+    "C:\\Users\\Asus\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\studia\\Projekt_TO\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj": {
+    "C:\\Users\\Asus\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\studia\\Projekt_TO\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj",
         "projectName": "mock_compare",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\studia\\Projekt_TO\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\studia\\Projekt_TO\\mock_compare\\Etap_6\\mock_compare\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\mock_compare\\Etap_6\\mock_compare\\mock_compare.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\mock_compare\\Etap_6\\mock_compare\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,10 +38,15 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "CsvHelper": {
               "target": "Package",
               "version": "[27.0.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
             },
             "Moq": {
               "target": "Package",
@@ -76,6 +79,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -84,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
