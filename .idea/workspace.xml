@@ -5,22 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06ce12e8-0069-4e09-8686-083c0e67ce12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/TestStore/0/000.testlog" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/.vs/mock_compare/v16/TestStore/0/000.testlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/bin/Debug/netcoreapp3.1/mock_compare.runtimeconfig.dev.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/mock_compare.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/mock_compare.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/Debug/netcoreapp3.1/mock_compare.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/mock_compare.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/mock_compare.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Etap_6/mock_compare/obj/mock_compare.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Etap_6/mock_compare/obj/mock_compare.csproj.nuget.g.props" afterDir="false" />
@@ -71,7 +80,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Etap_3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -220,6 +229,7 @@
       <workItem from="1621290183770" duration="545000" />
       <workItem from="1621324949088" duration="40000" />
       <workItem from="1621371237136" duration="600000" />
+      <workItem from="1621577281774" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="car transformer entity first test">
       <created>1619732773641</created>
