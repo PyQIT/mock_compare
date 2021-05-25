@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using mock_compare.Tests.NUnit;
 using NUnit.Framework;
 using System.Collections;
+using Telerik.JustMock;
+using Assert = NUnit.Framework.Assert;
 
 
 namespace mock_compare.Tests.NUnit.Builder
@@ -17,7 +19,7 @@ namespace mock_compare.Tests.NUnit.Builder
         public void getCarList()
         {
 
-            mock_compare.Builder.CarList carList = new Mock<mock_compare.Builder.CarList>();
+            mock_compare.Builder.CarList carList = Mock.Create(() => new mock_compare.Builder.CarList());
             Assert.AreEqual(carList.getCarList().Capacity, 5);
 
 

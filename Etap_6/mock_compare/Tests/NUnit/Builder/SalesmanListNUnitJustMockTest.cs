@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using mock_compare.Tests.NUnit;
 using NUnit.Framework;
-
+using Telerik.JustMock;
+using Assert = NUnit.Framework.Assert;
 
 namespace mock_compare.Tests.NUnit.Builder
 {
@@ -16,7 +17,7 @@ namespace mock_compare.Tests.NUnit.Builder
         public void getSalesmanList()
         {
 
-            mock_compare.Builder.SalesmanList salesmanList = new Mock<mock_compare.Builder.SalesmanList>();
+            mock_compare.Builder.SalesmanList salesmanList = Mock.Create(() => new mock_compare.Builder.SalesmanList());
             Assert.AreEqual(salesmanList.getSalesmanList().Capacity, 3);
 
 
