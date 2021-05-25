@@ -45,13 +45,17 @@
               "target": "Package",
               "version": "[27.0.3, )"
             },
+            "JustMock": {
+              "target": "Package",
+              "version": "[2021.2.511.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.16.1, )"
             },
             "NUnit": {
               "target": "Package",

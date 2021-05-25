@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using mock_compare.Tests.NUnit;
 using NUnit.Framework;
-using Moq;
+using Telerik.JustMock;
+using Assert = NUnit.Framework.Assert;
 
 namespace mock_compare.Tests.NUnit.Builder
 {
-    [TestFixture]
+    [TestClass]
     public class VehicleListNUnitJustMockTest
     {
 
-        [Test]
+        [TestMethod]
         public void getVehiceList()
         {
 
-            mock_compare.Builder.VehicleList vehicleList = new Mock<mock_compare.Builder.VehicleList>();
+            mock_compare.Builder.VehicleList vehicleList = Mock.Create(() => new mock_compare.Builder.VehicleList());
             Assert.AreEqual(vehicleList.getVehicleList().Capacity, 10);
 
         }
@@ -31,10 +33,10 @@ namespace mock_compare.Tests.NUnit.Builder
 
         }
 
-        [Test]
+        [TestMethod]
         public void quantityOfPositiveOverviews()
         {
-            mock_compare.Builder.VehicleList vehicleList = new Mock<mock_compare.Builder.VehicleList>();
+            mock_compare.Builder.VehicleList vehicleList = Mock.Create(() => new mock_compare.Builder.VehicleList());
             Assert.AreEqual(vehicleList.getListPositiveOverview().Capacity, 1);
         }
 
@@ -48,10 +50,10 @@ namespace mock_compare.Tests.NUnit.Builder
 
         }
 
-        [Test]
+        [TestMethod]
         public void quantityOfNegativeOverviews()
         {
-            mock_compare.Builder.VehicleList vehicleList = new Mock<mock_compare.Builder.VehicleList>();
+            mock_compare.Builder.VehicleList vehicleList = Mock.Create(() => new mock_compare.Builder.VehicleList());
             Assert.AreEqual(vehicleList.getListNegativeOverview().Capacity, 9);
         }
 

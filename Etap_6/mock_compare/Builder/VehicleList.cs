@@ -1,5 +1,4 @@
-﻿using Moq;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -113,11 +112,6 @@ namespace mock_compare.Builder
                 }
             }
             return overViewNegative;
-        }
-
-        public static implicit operator VehicleList(Mock<VehicleList> v)
-        {
-            throw new NotImplementedException();
         }
     }
 }

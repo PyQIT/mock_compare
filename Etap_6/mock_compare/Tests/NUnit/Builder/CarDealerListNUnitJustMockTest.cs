@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using mock_compare.Tests.NUnit;
 using NUnit.Framework;
-using Moq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Telerik.JustMock;
+using Assert = NUnit.Framework.Assert;
 using System.Collections;
 
 
@@ -17,8 +19,8 @@ namespace mock_compare.Tests.NUnit.Builder
         [Test]
         public void getCarDealerList()
         {
-
-            mock_compare.Builder.CarDealerList carDealerList = new Mock<mock_compare.Builder.CarDealerList>();
+            
+            mock_compare.Builder.CarDealerList carDealerList = Mock.Create(() => new mock_compare.Builder.CarDealerList());
             Assert.AreEqual(carDealerList.getCarDealerList().Capacity, 5);
 
 

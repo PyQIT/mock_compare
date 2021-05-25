@@ -1,5 +1,4 @@
-﻿using Moq;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,9 +55,5 @@ namespace mock_compare.Builder
             }
         }
 
-        public static implicit operator CarDealerList(Mock<CarDealerList> v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

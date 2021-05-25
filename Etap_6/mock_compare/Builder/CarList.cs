@@ -70,10 +70,5 @@ namespace mock_compare.Builder
             }
             return null;
         }
-
-        public static implicit operator CarList(Mock<CarList> v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

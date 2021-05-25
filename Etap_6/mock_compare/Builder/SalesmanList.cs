@@ -50,9 +50,5 @@ namespace mock_compare.Builder
             return salesmanList;
         }
 
-        public static implicit operator SalesmanList(Mock<SalesmanList> v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
