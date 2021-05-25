@@ -1,5 +1,4 @@
-﻿using Moq;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +36,10 @@ namespace mock_compare.Builder
             salesman3.setCarDealer(carDealerList.getCarDealerList()[2]);
             addSalesmanToList(salesman3);
 
+            Salesman salesman4 = new Salesman();
+            salesman4.setEmployee("Karol", "Boczek", "9703234213", "522223123", "Swietokrzyska 10", "salesman");
+            salesman4.setCarDealer(carDealerList.getCarDealerList()[3]);
+            addSalesmanToList(salesman4);
 
         }
 

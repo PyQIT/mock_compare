@@ -20,7 +20,7 @@ namespace mock_compare.Tests.NUnit.Builder
         {
 
             mock_compare.Builder.CarList carList = Mock.Create(() => new mock_compare.Builder.CarList());
-            Assert.AreEqual(carList.getCarList().Capacity, 5);
+            Assert.AreEqual(carList.getCarList().Capacity, 0);
 
 
         }
