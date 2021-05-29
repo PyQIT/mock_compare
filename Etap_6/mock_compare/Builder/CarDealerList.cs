@@ -16,6 +16,11 @@ namespace mock_compare.Builder
             this.carDealerList = new List<CarDealerList>();
         }
 
+        public CarDealerList(CarDealerList @Object)
+        {
+            this.carDealerList = new List<CarDealerList>();
+        }
+
         public void initList()
         {
 
