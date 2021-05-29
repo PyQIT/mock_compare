@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using mock_compare.Builder;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Assert = Xunit.Assert;
 using Xunit;
