@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using mock_compare.Builder;
-using Assert = NUnit.Framework.Assert;
+using Assert = Xunit.Assert;
 using Moq;
 using Xunit;
 
@@ -18,7 +18,7 @@ namespace mock_compare.Tests.XUnit.Builder
             SalesmanList salesmanList = new SalesmanList(salesmanListMock.Object);
             Salesman salesman4 = new Salesman();
             salesmanList.addSalesmanToList(salesman4);
-            Assert.AreEqual(salesmanList.getSalesmanList().Capacity, 4);
+            Assert.Equal(4, salesmanList.getSalesmanList().Capacity);
 
 
         }

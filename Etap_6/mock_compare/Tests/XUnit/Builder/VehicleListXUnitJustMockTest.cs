@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using mock_compare.Builder;
 using Telerik.JustMock;
-using Assert = NUnit.Framework.Assert;
+using Assert = Xunit.Assert;
 using Xunit;
 
 
@@ -19,7 +19,7 @@ namespace mock_compare.Tests.XUnit.Builder
 
             mock_compare.Builder.VehicleList vehicleList = Mock.Create(() => new mock_compare.Builder.VehicleList());
             Car car10 = new Car();
-            Assert.AreEqual(vehicleList.getVehicleList().Capacity, 0);
+            Assert.Equal(0, vehicleList.getVehicleList().Capacity);
 
         }
 
@@ -37,7 +37,7 @@ namespace mock_compare.Tests.XUnit.Builder
         public void quantityOfPositiveOverviews()
         {
             mock_compare.Builder.VehicleList vehicleList = Mock.Create(() => new mock_compare.Builder.VehicleList());
-            Assert.AreEqual(vehicleList.getListPositiveOverview().Capacity, 0);
+            Assert.Equal(0, vehicleList.getListPositiveOverview().Capacity);
         }
 
         private List<mock_compare.Builder.Vehicle> setPositiveOverview()
@@ -54,7 +54,7 @@ namespace mock_compare.Tests.XUnit.Builder
         public void quantityOfNegativeOverviews()
         {
             mock_compare.Builder.VehicleList vehicleList = Mock.Create(() => new mock_compare.Builder.VehicleList());
-            Assert.AreEqual(vehicleList.getListNegativeOverview().Capacity, 0);
+            Assert.Equal(0, vehicleList.getListNegativeOverview().Capacity);
         }
 
         private List<mock_compare.Builder.Vehicle> setNegativeOverview()
