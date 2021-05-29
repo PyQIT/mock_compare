@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using mock_compare.Builder;
 using mock_compare.Tests.NUnit;
 using NUnit.Framework;
-using Telerik.JustMock;
 using Assert = NUnit.Framework.Assert;
 using Moq;
 namespace mock_compare.Tests.NUnit.Builder
