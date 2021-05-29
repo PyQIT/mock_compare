@@ -19,7 +19,8 @@ namespace mock_compare.Tests.NUnit.Builder
         public void getVehiceList()
         {
 
-            VehicleList vehicleList = new Mock<VehicleList>();
+            var vehicleListMock = new Mock<VehicleList>();
+            VehicleList vehicleList = new VehicleList(vehicleListMock.Object);
             Car car10 = new Car();
             Assert.AreEqual(vehicleList.getVehicleList().Capacity, 0);
 

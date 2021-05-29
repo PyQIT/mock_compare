@@ -11,6 +11,11 @@ namespace mock_compare.Builder
     {
         private List<Vehicle> vehicleList;
 
+        public VehicleList(VehicleList @object)
+        {
+            vehicleList = new List<Vehicle>();
+        }
+
         public VehicleList()
         {
             vehicleList = new List<Vehicle>();
