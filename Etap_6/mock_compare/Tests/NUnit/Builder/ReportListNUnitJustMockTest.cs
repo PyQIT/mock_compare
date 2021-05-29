@@ -21,7 +21,6 @@ namespace mock_compare.Tests.NUnit.Builder
             mock_compare.Builder.ReportList reportList = Mock.Create(() => new mock_compare.Builder.ReportList());
             Assert.AreEqual(reportList.getReportList().Capacity, 0);
 
-
         }
 
         private List<mock_compare.Builder.ReportList> setReportList()
