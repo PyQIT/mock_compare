@@ -11,19 +11,20 @@ namespace mock_compare.Files
 {
     public class CsvImport
     {
-        public IEnumerable<String> convertCsvToArray(String csvFile)
+
+        public List<string> convertCsvToArray(string absolutePath)
         {
-            using (var reader = new StreamReader(csvFile))
-            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            List<string> result = new List<string>();
+            string[] lines = File.ReadAllLines(absolutePath);
+            foreach (string line in lines)
             {
-                var anonymousTypeDefinition = new
+                string[] columns = line.Split(',');
+                foreach (string column in columns)
                 {
-                    Id = default(int),
-                    Name = string.Empty
-                };
-                var records = csv.GetRecords(anonymousTypeDefinition);
-                return (IEnumerable<string>)records;
+                    result.Add(column);
+                }
             }
+            return result;
         }
     }
 }
