@@ -13,11 +13,13 @@ namespace mock_compare.Builder
         public CarList()
         {
             carList = new List<CarList>();
+            initList();
         }
 
         public CarList(CarList @Object)
         {
             carList = new List<CarList>();
+            initList();
         }
 
 

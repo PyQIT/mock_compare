@@ -13,6 +13,7 @@ namespace mock_compare.Builder
         public ReportPatternList()
         {
             patternList = new List<ReportPattern>();
+            initList();
         }
 
         public void addReportToList(ReportPattern report)

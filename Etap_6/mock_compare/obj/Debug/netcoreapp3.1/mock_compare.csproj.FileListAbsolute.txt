@@ -9,7 +9,6 @@ C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\mock_comp
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\mock_compare.pdb
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\mock_compare.Views.dll
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\mock_compare.Views.pdb
-C:\Users\Asus\mock_compare\Etap_6\mock_compare\obj\Debug\netcoreapp3.1\mock_compare.csprojAssemblyReference.cache
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\obj\Debug\netcoreapp3.1\mock_compare.AssemblyInfoInputs.cache
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\obj\Debug\netcoreapp3.1\mock_compare.AssemblyInfo.cs
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\obj\Debug\netcoreapp3.1\mock_compare.RazorAssemblyInfo.cache
@@ -270,3 +269,4 @@ C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\xunit.abs
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\xunit.assert.dll
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\xunit.core.dll
 C:\Users\Asus\mock_compare\Etap_6\mock_compare\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+C:\Users\Asus\mock_compare\Etap_6\mock_compare\obj\Debug\netcoreapp3.1\mock_compare.csprojAssemblyReference.cache

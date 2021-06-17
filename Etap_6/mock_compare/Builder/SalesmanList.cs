@@ -13,11 +13,13 @@ namespace mock_compare.Builder
         public SalesmanList(SalesmanList @object)
         {
             salesmanList = new List<Salesman>();
+            initList();
         }
 
         public SalesmanList()
         {
             salesmanList = new List<Salesman>();
+            initList();
         }
 
         public void initList()

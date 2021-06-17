@@ -13,11 +13,13 @@ namespace mock_compare.Builder
         public ReportList()
         {
             reportList = new List<ReportList>();
+            initList();
         }
 
         public ReportList(ReportList @object)
         {
             reportList = new List<ReportList>();
+            initList();
         }
 
         public void addReportToList(ReportList report)
