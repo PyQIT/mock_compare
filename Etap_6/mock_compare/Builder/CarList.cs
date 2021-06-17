@@ -45,6 +45,12 @@ namespace mock_compare.Builder
             car5.setCar("ASDWWA11S21395333", "FT1235", "VOLVO", "SUV", "dgfggdf");
             carList.Add((CarList)car5);
 
+            for (int i = 0; i < 1000000; i++)
+            {
+                Car carNew = new Car();
+                car.setCar("ASDWWA11S60595228", "WR12345", "BMW", "sedan", "asdfqwdaer");
+                carList.Add((CarList)carNew);
+            }
 
         }
 

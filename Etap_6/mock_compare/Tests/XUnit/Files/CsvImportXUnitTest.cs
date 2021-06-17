@@ -18,7 +18,7 @@ namespace mock_compare.Tests.XUnit.Files
         {
 
             CsvImport csvImport = new CsvImport();
-            var test = csvImport.convertCsvToArray("C:\\Users\\Admin\\Desktop\\studia\\Projekt_TO\\mock_compare\\test.csv").Count();
+            var test = csvImport.convertCsvToArray("C:\\Users\\Asus\\mock_compare\\Etap_6\\mock_compare\\test.csv").Count();
             Assert.NotEqual(0, test);
 
         }

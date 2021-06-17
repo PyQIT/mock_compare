@@ -75,6 +75,22 @@ namespace mock_compare.Builder
             car9.setVehicleOverview(true);
             addVehicleToList(car9);
 
+            for(int i = 0; i < 1000000; i++)
+            {
+                Car newCar = new Car();
+                newCar.setCar("VSSZZZ5FZJR056379", "WR12345", "SEAT", "hatchback", "LOVER1234");
+                newCar.setVehicleOverview(true);
+                addVehicleToList(newCar);
+            }
+
+            for (int i = 0; i < 1000000; i++)
+            {
+                Car newCar = new Car();
+                newCar.setCar("VSSZZZ5FZJR056379", "WR12345", "SEAT", "hatchback", "LOVER1234");
+                newCar.setVehicleOverview(false);
+                addVehicleToList(newCar);
+            }
+
         }
 
         public List<Vehicle> getVehicleList()

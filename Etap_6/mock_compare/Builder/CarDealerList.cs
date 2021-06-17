@@ -36,6 +36,13 @@ namespace mock_compare.Builder
             carDealerList.Add((CarDealerList)carDealer3);
             carDealerList.Add((CarDealerList)carDealer4);
 
+
+            for (int i = 0; i < 1000000; i++)
+            {
+                CarDealer carDealerNew = new CarDealer("Jesionowski sp.z o.o.", "Swietokrzyska 5", "Radom", "BMW");
+                carDealerList.Add((CarDealerList)carDealerNew);
+            }
+
         }
 
 

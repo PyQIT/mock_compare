@@ -46,6 +46,14 @@ namespace mock_compare.Builder
             salesman4.setCarDealer(carDealerList.getCarDealerList()[3]);
             addSalesmanToList(salesman4);
 
+            for (int i = 0; i < 1000000; i++)
+            {
+                Salesman newSalesman = new Salesman();
+                newSalesman.setEmployee("Karol", "Soczek", "9703234212", "523123123", "Swietokrzyska 5", "salesman");
+                newSalesman.setCarDealer(carDealerList.getCarDealerList()[2]);
+                addSalesmanToList(newSalesman);
+            }
+
         }
 
         public void addSalesmanToList(Salesman salesman)

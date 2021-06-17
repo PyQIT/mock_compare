@@ -43,6 +43,13 @@ namespace mock_compare.Builder
             patternList.Add(report1);
             patternList.Add(report2);
             patternList.Add(report3);
+
+            for (int i = 0; i < 1000000; i++)
+            {
+                ReportPattern reportNew = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList()[2]).build();
+                patternList.Add(reportNew);
+            }
+
         }
     }
 }
