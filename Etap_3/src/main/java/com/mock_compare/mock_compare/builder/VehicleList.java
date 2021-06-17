@@ -63,6 +63,20 @@ public class VehicleList extends Car {
         car.setVehicleOverview(true);
         vehicleList.add(car9);
 
+        for(int i = 0; i < 1000000; i++){
+            Car newcar = new Car();
+            newcar.setCar("VSSZZZ5FZJR056379", "WR12345", "SEAT", "hatchback", "LOVER1234");
+            newcar.setVehicleOverview(true);
+            vehicleList.add(newcar);
+        }
+
+        for(int i = 0; i < 1000000; i++){
+            Car newcar = new Car();
+            newcar.setCar("VSSZZZ5FZJR056379", "WR12345", "SEAT", "hatchback", "LOVER1234");
+            newcar.setVehicleOverview(false);
+            vehicleList.add(newcar);
+        }
+
     }
 
     public List<Vehicle> getVehicleList(){

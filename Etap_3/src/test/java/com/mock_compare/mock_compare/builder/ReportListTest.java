@@ -22,7 +22,7 @@ public class ReportListTest {
         when(reportList.getReportList()).thenReturn(setReport());
 
         //then
-        Assertions.assertEquals(reportList.getReportList().size(), 0);
+        Assertions.assertEquals(reportList.getReportList().size(), 1000007);
 
 }
 

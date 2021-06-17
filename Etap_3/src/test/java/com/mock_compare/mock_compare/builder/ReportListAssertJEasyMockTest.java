@@ -22,7 +22,7 @@ public class ReportListAssertJEasyMockTest {
         replay(reportList);
 
         //then
-        assertThat(reportList.getReportList().size()).isEqualTo(0);
+        assertThat(reportList.getReportList().size()).isEqualTo(1000007);
 
     }
 

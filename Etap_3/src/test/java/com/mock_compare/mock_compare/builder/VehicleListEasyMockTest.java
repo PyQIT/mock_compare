@@ -23,7 +23,7 @@ public class VehicleListEasyMockTest {
         replay(vehicleList);
 
         //then
-        Assertions.assertEquals(vehicleList.getVehicleList().size(), 10);
+        Assertions.assertEquals(vehicleList.getVehicleList().size(), 2000010);
 
     }
 
@@ -47,7 +47,7 @@ public class VehicleListEasyMockTest {
         replay(vehicleList);
 
         //then
-        Assertions.assertEquals(vehicleList.getListPositiveOverview().size(), 1);
+        Assertions.assertEquals(vehicleList.getListPositiveOverview().size(), 1000001);
     }
 
     private List<Vehicle> setPositiveOverview(){
@@ -70,7 +70,7 @@ public class VehicleListEasyMockTest {
         replay(vehicleList);
 
         //then
-        Assertions.assertEquals(vehicleList.getListNegativeOverview().size(), 9);
+        Assertions.assertEquals(vehicleList.getListNegativeOverview().size(), 1000009);
 
     }
 

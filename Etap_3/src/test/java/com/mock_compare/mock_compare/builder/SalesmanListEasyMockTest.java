@@ -26,7 +26,7 @@ public class SalesmanListEasyMockTest {
         replay(salesmanList);
 
         //then
-        Assertions.assertEquals(salesmanList.getSalesmanList().size(), 3);
+        Assertions.assertEquals(salesmanList.getSalesmanList().size(), 1000003);
 
 
     }
