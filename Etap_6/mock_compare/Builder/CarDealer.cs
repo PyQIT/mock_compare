@@ -20,6 +20,11 @@ namespace mock_compare.Builder
             this.dealerMainBrand = dealerMainBrand;
         }
 
+        public CarDealer()
+        {
+
+        }
+
         public String getCarDealer()
         {
             return carDealer;

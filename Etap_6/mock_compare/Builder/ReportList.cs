@@ -8,24 +8,29 @@ namespace mock_compare.Builder
 {
     public class ReportList
     {
-        ArrayList reportList;
+        List<ReportList> reportList;
 
         public ReportList()
         {
-            reportList = new ArrayList();
+            reportList = new List<ReportList>();
         }
 
-        public void addReportToList(Report report)
+        public ReportList(ReportList @object)
+        {
+            reportList = new List<ReportList>();
+        }
+
+        public void addReportToList(ReportList report)
         {
             reportList.Add(report);
         }
 
-        public ArrayList getReportList()
+        public List<ReportList> getReportList()
         {
             return reportList;
         }
 
-        public void removeReportFromList(Report report)
+        public void removeReportFromList(ReportList report)
         {
             reportList.Remove(report);
         }
@@ -54,5 +59,6 @@ namespace mock_compare.Builder
             report6.setReport("Kuba", "Walek", "21/06/2021");
 
         }
+
     }
 }
