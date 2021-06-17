@@ -24,7 +24,7 @@ public class SalesmanListTest {
         when(salesmanList.getSalesmanList()).thenReturn(setSalesmanList());
 
         //then
-        Assertions.assertEquals(salesmanList.getSalesmanList().size(), 3);
+        Assertions.assertEquals(salesmanList.getSalesmanList().size(), 1000003);
 
 
     }

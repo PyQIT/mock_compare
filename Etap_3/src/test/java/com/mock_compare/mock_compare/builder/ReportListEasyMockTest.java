@@ -21,7 +21,7 @@ public class ReportListEasyMockTest {
         expect(reportList.getReportList()).andStubReturn(setReport());
         replay(reportList);
         //then
-        Assertions.assertEquals(reportList.getReportList().size(), 0);
+        Assertions.assertEquals(reportList.getReportList().size(), 1000007);
 
     }
 

@@ -23,7 +23,7 @@ public class CarDealerListTest {
         when(carDealerList.getCarDealerList()).thenReturn(setCarDealer());
 
         //then
-        Assertions.assertEquals(carDealerList.getCarDealerList().size(), 5);
+        Assertions.assertEquals(carDealerList.getCarDealerList().size(), 1000005);
 
     }
 

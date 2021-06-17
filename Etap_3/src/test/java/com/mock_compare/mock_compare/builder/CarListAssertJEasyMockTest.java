@@ -22,7 +22,7 @@ public class CarListAssertJEasyMockTest {
         replay(carList);
 
         //then
-        assertThat(carList.getCarList().size()).isEqualTo(5);
+        assertThat(carList.getCarList().size()).isEqualTo(1000005);
 
     }
 

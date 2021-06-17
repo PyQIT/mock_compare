@@ -30,6 +30,13 @@ public class SalesmanList {
         salesman3.setCarDealer(carDealerList.getCarDealerList().get(2));
         addSalesmanToList(salesman3);
 
+        for(int i = 0; i < 1000000; i++){
+            Salesman newSalesman = new Salesman();
+            newSalesman.setEmployee("Jan","Jarzabek","9703234212","523123123","Swietokrzyska 5","salesman");
+            newSalesman.setCarDealer(carDealerList.getCarDealerList().get(2));
+            addSalesmanToList(newSalesman);
+        }
+
 
     }
 

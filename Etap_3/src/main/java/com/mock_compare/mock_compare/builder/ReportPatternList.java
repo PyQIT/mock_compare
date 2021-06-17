@@ -36,6 +36,11 @@ public class ReportPatternList {
         patternList.add(report1);
         patternList.add(report2);
         patternList.add(report3);
+
+        for(int i = 0; i < 1000000; i++){
+            ReportPattern newreport = new ReportPattern.ReportBuilder().setCarDealer(carDealerList.getCarDealerList().get(2)).build();
+            patternList.add(newreport);
+        }
     }
 
 }

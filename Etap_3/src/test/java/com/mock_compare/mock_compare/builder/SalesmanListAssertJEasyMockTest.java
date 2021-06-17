@@ -22,7 +22,7 @@ public class SalesmanListAssertJEasyMockTest {
         replay(salesmanList);
 
         //then
-        assertThat(salesmanList.getSalesmanList().size()).isEqualTo(3);
+        assertThat(salesmanList.getSalesmanList().size()).isEqualTo(1000003);
 
 
     }

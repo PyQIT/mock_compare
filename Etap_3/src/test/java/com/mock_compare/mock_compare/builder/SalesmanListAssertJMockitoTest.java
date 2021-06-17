@@ -23,7 +23,7 @@ public class SalesmanListAssertJMockitoTest {
         when(salesmanList.getSalesmanList()).thenReturn(setSalesmanList());
 
         //then
-        assertThat(salesmanList.getSalesmanList().size()).isEqualTo(3);
+        assertThat(salesmanList.getSalesmanList().size()).isEqualTo(1000003);
 
 
     }

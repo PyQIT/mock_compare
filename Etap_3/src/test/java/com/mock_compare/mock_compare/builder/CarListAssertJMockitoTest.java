@@ -23,7 +23,7 @@ public class CarListAssertJMockitoTest {
         when(carList.getCarList()).thenReturn(setCar());
 
         //then
-        assertThat(carList.getCarList().size()).isEqualTo(5);
+        assertThat(carList.getCarList().size()).isEqualTo(1000005);
 
     }
 

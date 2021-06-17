@@ -23,7 +23,7 @@ public class ReportListAssertJMockitoTest {
         when(reportList.getReportList()).thenReturn(setReport());
 
         //then
-        assertThat(reportList.getReportList().size()).isEqualTo(0);
+        assertThat(reportList.getReportList().size()).isEqualTo(1000007);
 
     }
 

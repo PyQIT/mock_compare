@@ -33,7 +33,11 @@ public class CarList extends Car {
         car5.setCar("ASDWWA11S21395333","FT1235", "VOLVO","SUV","dgfggdf");
         carList.add(car5);
 
-
+        for(int i = 0; i < 1000000; i++){
+            Car newCar = new Car();
+            newCar.setCar("ASDWWA11S21395333","FT1235", "VOLVO","SUV","dgfggdf");
+            carList.add(newCar);
+        }
     }
 
     public List<Car> getCarList(){

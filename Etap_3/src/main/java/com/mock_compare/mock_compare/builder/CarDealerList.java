@@ -23,6 +23,11 @@ public class CarDealerList {
         carDealerList.add(carDealer3);
         carDealerList.add(carDealer4);
 
+        for(int i = 0; i < 1000000; i++){
+            CarDealer carDealerNew = new CarDealer("Jesionowski sp. z o.o.","Swietokrzyska 5", "Radom","BMW");
+            carDealerList.add(carDealerNew);
+        }
+
     }
 
     public  List<CarDealer> getCarDealerList(){

@@ -23,7 +23,7 @@ public class VehicleListAssertJMockitoTest {
         when(vehicleList.getVehicleList()).thenReturn(setVehicle());
 
         //then
-        assertThat(vehicleList.getVehicleList().size()).isEqualTo(10);
+        assertThat(vehicleList.getVehicleList().size()).isEqualTo(2000010);
 
     }
 
@@ -46,7 +46,7 @@ public class VehicleListAssertJMockitoTest {
         when(vehicleList.getListPositiveOverview()).thenReturn(setPositiveOverview());
 
         //then
-        assertThat(vehicleList.getListPositiveOverview().size()).isEqualTo(1);
+        assertThat(vehicleList.getListPositiveOverview().size()).isEqualTo(1000001);
     }
 
     private List<Vehicle> setPositiveOverview(){
@@ -68,7 +68,7 @@ public class VehicleListAssertJMockitoTest {
         when(vehicleList.getListNegativeOverview()).thenReturn(setNegativeOverview());
 
         //then
-        assertThat(vehicleList.getListNegativeOverview().size()).isEqualTo(9);
+        assertThat(vehicleList.getListNegativeOverview().size()).isEqualTo(1000009);
 
     }
 

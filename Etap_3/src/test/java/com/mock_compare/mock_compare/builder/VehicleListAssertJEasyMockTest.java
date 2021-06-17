@@ -23,7 +23,7 @@ public class VehicleListAssertJEasyMockTest {
         replay(vehicleList);
 
         //then
-        assertThat(vehicleList.getVehicleList().size()).isEqualTo(10);
+        assertThat(vehicleList.getVehicleList().size()).isEqualTo(2000010);
 
     }
 
@@ -47,7 +47,7 @@ public class VehicleListAssertJEasyMockTest {
         replay(vehicleList);
 
         //then
-        assertThat(vehicleList.getListPositiveOverview().size()).isEqualTo(1);
+        assertThat(vehicleList.getListPositiveOverview().size()).isEqualTo(1000001);
     }
 
     private List<Vehicle> setPositiveOverview(){
@@ -70,7 +70,7 @@ public class VehicleListAssertJEasyMockTest {
         replay(vehicleList);
 
         //then
-        assertThat(vehicleList.getListNegativeOverview().size()).isEqualTo(9);
+        assertThat(vehicleList.getListNegativeOverview().size()).isEqualTo(1000009);
 
     }
 
