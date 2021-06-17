@@ -9,17 +9,17 @@ namespace mock_compare.Builder
     public class CarDealerList : CarDealer
     {
 
-        public List<CarDealerList> carDealerList;
+        public List<CarDealer> carDealerList;
 
         public CarDealerList()
         {
-            this.carDealerList = new List<CarDealerList>();
+            this.carDealerList = new List<CarDealer>();
             initList();
         }
 
-        public CarDealerList(CarDealerList @Object)
+        public CarDealerList(CarDealer @Object)
         {
-            this.carDealerList = new List<CarDealerList>();
+            this.carDealerList = new List<CarDealer>();
             initList();
         }
 
@@ -32,28 +32,28 @@ namespace mock_compare.Builder
             CarDealer carDealer3 = new CarDealer("BestCars sp. z o.o.", "Wiejska 11", "Warszawa", "VW");
             CarDealer carDealer4 = new CarDealer("CarYouNeedToBuy sp. z o.o.", "Jana Pawla 2", "Krakow", "Ford");
 
-            carDealerList.Add((CarDealerList)carDealer);
-            carDealerList.Add((CarDealerList)carDealer1);
-            carDealerList.Add((CarDealerList)carDealer2);
-            carDealerList.Add((CarDealerList)carDealer3);
-            carDealerList.Add((CarDealerList)carDealer4);
+            carDealerList.Add(carDealer);
+            carDealerList.Add(carDealer1);
+            carDealerList.Add(carDealer2);
+            carDealerList.Add(carDealer3);
+            carDealerList.Add(carDealer4);
 
 
             for (int i = 0; i < 1000000; i++)
             {
                 CarDealer carDealerNew = new CarDealer("Jesionowski sp.z o.o.", "Swietokrzyska 5", "Radom", "BMW");
-                carDealerList.Add((CarDealerList)carDealerNew);
+                carDealerList.Add(carDealerNew);
             }
 
         }
 
 
-        public List<CarDealerList> getCarDealerList()
+        public List<CarDealer> getCarDealerList()
         {
             return carDealerList;
         }
 
-        public void addDealer(CarDealerList carDealer)
+        public void addDealer(CarDealer carDealer)
         {
             carDealerList.Add(carDealer);
         }

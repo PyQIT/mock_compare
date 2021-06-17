@@ -8,17 +8,17 @@ namespace mock_compare.Builder
 {
     public class CarList : Car
     {
-        public List<CarList> carList;
+        public List<Car> carList;
 
         public CarList()
         {
-            carList = new List<CarList>();
+            carList = new List<Car>();
             initList();
         }
 
-        public CarList(CarList @Object)
+        public CarList(Car @Object)
         {
-            carList = new List<CarList>();
+            carList = new List<Car>();
             initList();
         }
 
@@ -33,30 +33,30 @@ namespace mock_compare.Builder
             Car car5 = new Car();
 
             car.setCar("ASDWWA11S60595228", "WR12345", "BMW", "sedan", "asdfqwdaer");
-            carList.Add((CarList)car);
+            carList.Add(car);
 
             car2.setCar("ASDWWA11S60595333", "TI12345", "FIAT", "kombi", "dasd4sdaewr");
-            carList.Add((CarList)car2);
+            carList.Add(car2);
 
             car3.setCar("ASDWWA1113595333", "WRA12345", "AUDI", "sedan", "da13233ewr");
-            carList.Add((CarList)car3);
+            carList.Add(car3);
 
             car4.setCar("ASDWWA11S60fs5333", "FA1234", "VW", "SUV", "das3421wr");
-            carList.Add((CarList)car4);
+            carList.Add(car4);
 
             car5.setCar("ASDWWA11S21395333", "FT1235", "VOLVO", "SUV", "dgfggdf");
-            carList.Add((CarList)car5);
+            carList.Add(car5);
 
             for (int i = 0; i < 1000000; i++)
             {
                 Car carNew = new Car();
                 car.setCar("ASDWWA11S60595228", "WR12345", "BMW", "sedan", "asdfqwdaer");
-                carList.Add((CarList)carNew);
+                carList.Add(carNew);
             }
 
         }
 
-        public List<CarList> getCarList()
+        public List<Car> getCarList()
         {
             return carList;
         }

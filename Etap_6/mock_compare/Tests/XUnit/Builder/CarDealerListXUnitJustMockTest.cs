@@ -18,13 +18,13 @@ namespace mock_compare.Tests.XUnit.Builder
         {
 
             mock_compare.Builder.CarDealerList carDealerList = Mock.Create(() => new mock_compare.Builder.CarDealerList());
-            Assert.Equal(0, carDealerList.getCarDealerList().Capacity);
+            Assert.Equal(1048576, carDealerList.getCarDealerList().Capacity);
 
 
 
         }
 
-        private List<mock_compare.Builder.CarDealerList> setCarDealer()
+        private List<mock_compare.Builder.CarDealer> setCarDealer()
         {
 
             mock_compare.Builder.CarDealerList carDealerList = new mock_compare.Builder.CarDealerList();

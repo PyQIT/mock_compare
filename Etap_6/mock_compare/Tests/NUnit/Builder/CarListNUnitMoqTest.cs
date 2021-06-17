@@ -19,12 +19,12 @@ namespace mock_compare.Tests.NUnit.Builder
         {
             var carListMock = new Mock<CarList>();
             CarList carList = new CarList(carListMock.Object);
-            Assert.AreEqual(carList.getCarList().Capacity, 0);
+            Assert.AreEqual(carList.getCarList().Capacity, 1048576);
 
 
         }
 
-        private List<mock_compare.Builder.CarList> setCar()
+        private List<mock_compare.Builder.Car> setCar()
         {
 
             mock_compare.Builder.CarList carList = new mock_compare.Builder.CarList();

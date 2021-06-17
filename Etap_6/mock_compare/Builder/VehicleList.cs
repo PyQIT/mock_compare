@@ -122,9 +122,16 @@ namespace mock_compare.Builder
             List<Vehicle> overViewPositive = new List<Vehicle>();
             for (int i = 0; i < vehicleList.Capacity; i++)
             {
-                if (vehicleList[i].getVehicleOverView() == true)
+                try
                 {
-                    overViewPositive.Add(vehicleList[i]);
+                    if (vehicleList[i].getVehicleOverView().Equals(true))
+                    {
+                        overViewPositive.Add(vehicleList[i]);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex + " " + i);
                 }
             }
             return overViewPositive;
@@ -133,11 +140,18 @@ namespace mock_compare.Builder
         public List<Vehicle> getListNegativeOverview()
         {
             List<Vehicle> overViewNegative = new List<Vehicle>();
-            for (int i = 0; i < vehicleList.Capacity; i++)
+            int tmp = vehicleList.Capacity;
+            for (int i = 0; i < tmp; i++)
             {
-                if (vehicleList[i].getVehicleOverView() == false)
+                try
                 {
-                    overViewNegative.Add(vehicleList[i]);
+                    if (vehicleList[i].getVehicleOverView().Equals(false))
+                    {
+                        overViewNegative.Add(vehicleList[i]);
+                    }
+                }catch(Exception ex)
+                {
+                    Console.WriteLine(ex + " " + i);
                 }
             }
             return overViewNegative;

@@ -22,7 +22,7 @@ namespace mock_compare.Tests.NUnit.Builder
             var vehicleListMock = new Mock<VehicleList>();
             VehicleList vehicleList = new VehicleList(vehicleListMock.Object);
             Car car10 = new Car();
-            Assert.AreEqual(vehicleList.getVehicleList().Capacity, 0);
+            Assert.AreEqual(vehicleList.getVehicleList().Capacity, 2097152);
 
         }
 
@@ -41,7 +41,7 @@ namespace mock_compare.Tests.NUnit.Builder
         {
             var vehicleListMock = new Mock<VehicleList>();
             VehicleList vehicleList = new VehicleList(vehicleListMock.Object);
-            Assert.AreEqual(vehicleList.getListPositiveOverview().Capacity, 0);
+            Assert.AreEqual(vehicleList.getListPositiveOverview().Capacity, 1048576);
         }
 
         private List<mock_compare.Builder.Vehicle> setPositiveOverview()
@@ -59,7 +59,7 @@ namespace mock_compare.Tests.NUnit.Builder
         {
             var vehicleListMock = new Mock<VehicleList>();
             VehicleList vehicleList = new VehicleList(vehicleListMock.Object);
-            Assert.AreEqual(vehicleList.getListNegativeOverview().Capacity, 0);
+            Assert.AreEqual(vehicleList.getListNegativeOverview().Capacity, 1048576);
         }
 
         private List<mock_compare.Builder.Vehicle> setNegativeOverview()

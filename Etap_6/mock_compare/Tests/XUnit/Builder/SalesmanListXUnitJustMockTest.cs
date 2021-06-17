@@ -18,7 +18,7 @@ namespace mock_compare.Tests.XUnit.Builder
             mock_compare.Builder.SalesmanList salesmanList = Mock.Create(() => new mock_compare.Builder.SalesmanList());
             Salesman salesman4 = new Salesman();
             salesmanList.addSalesmanToList(salesman4);
-            Assert.Equal(4, salesmanList.getSalesmanList().Capacity);
+            Assert.Equal(1048576, salesmanList.getSalesmanList().Capacity);
 
 
         }

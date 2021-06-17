@@ -18,11 +18,11 @@ namespace mock_compare.Tests.XUnit.Builder
         {
 
             mock_compare.Builder.ReportList reportList = Mock.Create(() => new mock_compare.Builder.ReportList());
-            Assert.Equal(0, reportList.getReportList().Capacity);
+            Assert.Equal(1048576, reportList.getReportList().Capacity);
 
         }
 
-        private List<mock_compare.Builder.ReportList> setReportList()
+        private List<mock_compare.Builder.Report> setReportList()
         {
 
             mock_compare.Builder.ReportList reportList = new mock_compare.Builder.ReportList();

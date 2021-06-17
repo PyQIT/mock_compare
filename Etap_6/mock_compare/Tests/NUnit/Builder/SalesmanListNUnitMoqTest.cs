@@ -19,7 +19,7 @@ namespace mock_compare.Tests.NUnit.Builder
             SalesmanList salesmanList = new SalesmanList(salesmanListMock.Object);
             Salesman salesman4 = new Salesman();
             salesmanList.addSalesmanToList(salesman4);
-            Assert.AreEqual(salesmanList.getSalesmanList().Capacity, 4);
+            Assert.AreEqual(salesmanList.getSalesmanList().Capacity, 1048576);
 
 
         }

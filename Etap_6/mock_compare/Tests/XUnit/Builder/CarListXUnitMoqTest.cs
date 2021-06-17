@@ -17,12 +17,12 @@ namespace mock_compare.Tests.XUnit.Builder
         {
             var carListMock = new Mock<CarList>();
             CarList carList = new CarList(carListMock.Object);
-            Assert.Equal(0, carList.getCarList().Capacity);
+            Assert.Equal(1048576, carList.getCarList().Capacity);
 
 
         }
 
-        private List<mock_compare.Builder.CarList> setCar()
+        private List<mock_compare.Builder.Car> setCar()
         {
 
             mock_compare.Builder.CarList carList = new mock_compare.Builder.CarList();
